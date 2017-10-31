@@ -1,4 +1,4 @@
-package view.display;
+package vocab.view;
 
 public class PopupDisplay
 {

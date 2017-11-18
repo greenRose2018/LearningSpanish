@@ -1,10 +1,10 @@
 package useful.controller;
 
-public class VocabController
+public class SpanishController
 {
 	private String[] myWords = {"Ryan", "mason", "Sheradon", "Preston"};
 	private int[] myNumbers;
-	public VocabController()
+	public SpanishController()
 	{
 		myWords = new String[6];
 		myNumbers = new int[8];

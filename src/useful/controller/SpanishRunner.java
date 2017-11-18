@@ -1,10 +1,10 @@
 package useful.controller;
 
-public class VocabRunner
+public class SpanishRunner
 {
 	public static void main(String[]args)
 	{
-		VocabController app = new VocabController();
+		SpanishController app = new SpanishController();
 		app.start();
 	}
 }

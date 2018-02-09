@@ -5,7 +5,24 @@ import useful.controller.SpanishController;
 import java.awt.*;
 import javax.swing.*;
 
-public class SpanishPanel 
+public class SpanishPanel extends JPanel
 {
 
+	public SpanishPanel(SpanishController appController)
+	{
+		super();
+		
+	}
+	private void setupPanel()
+	{
+		
+	}
+	private void setupLayout()
+	{
+		
+	}
+	private void setupListeners()
+	{
+		
+	}
 }

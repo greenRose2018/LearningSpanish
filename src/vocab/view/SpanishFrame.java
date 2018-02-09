@@ -3,7 +3,7 @@ package vocab.view;
 import useful.controller.SpanishController;
 import javax.swing.JFrame;
 
-public class SpanishFrame 
+public class SpanishFrame extends JFrame
 {
 
 }

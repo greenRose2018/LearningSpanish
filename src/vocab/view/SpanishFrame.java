@@ -1,5 +1,9 @@
 package vocab.view;
 
-public class SpanishFrame {
+import useful.controller.SpanishController;
+import javax.swing.JFrame;
+
+public class SpanishFrame 
+{
 
 }

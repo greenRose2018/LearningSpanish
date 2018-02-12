@@ -17,12 +17,15 @@ public class SpanishFrame extends JFrame
 		super();
 		this.setAppController(appController);
 		mainMenuPanel = new SpanishPanel(appController);
-		
+		setupFrame();
 		
 	}
 	private void setupFrame()
 	{
-		//this.setContentPane(mainMenuPanel);
+		this.setContentPane(mainMenuPanel);
+		this.setTitle("Main Menu");
+		this.setResizable(false);
+		this.setVisible(true);
 		
 		
 	}

@@ -19,11 +19,22 @@ public class SpanishPanel extends JPanel
 	public SpanishPanel(SpanishController appController)
 	{
 		super();
+		baseLayout = new SpringLayout();
 		
+		foodBtn = new JButton("Foods");
+		verbsBtn = new JButton("Verbs");
 		
+		foodPanel = new JPanel();
+		verbsPanel = new JPanel();
+
 	}
 	private void setupPanel()
 	{
+		this.setLayout(baseLayout);
+		this.add(foodBtn);
+		this.add(verbsBtn);
+		this.add(foodPanel);
+		this.add(verbsPanel);
 		
 	}
 	private void setupLayout()

@@ -25,11 +25,11 @@ public class SpanishFrame extends JFrame
 	private void setupFrame()
 	{
 		this.setContentPane(mainMenuPanel);
-		this.getContentPane().add(mainPanel, "0");
-		this.getContentPane().add(foodPanel, "1");
-		this.getContentPane().add(verbsPanel, "2");
+//		this.getContentPane().add(mainPanel, "0");
+//		this.getContentPane().add(foodPanel, "1");
+//		this.getContentPane().add(verbsPanel, "2");
 		
-		mainPanel.setSize(500, 450);
+		this.setSize(500, 450);
 		
 		this.setTitle("Main Menu");
 		this.setSize(500,450);

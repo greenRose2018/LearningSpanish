@@ -39,7 +39,6 @@ public class SpanishPanel extends JPanel
 	}
 	private void setupPanel()
 	{
-		this.setLayout(baseLayout);
 		
 		//mainPanel
 		this.add(mainPanel);
@@ -54,6 +53,9 @@ public class SpanishPanel extends JPanel
 		//VerbsPanel 
 		this.add(verbsPanel);
 		verbsPanel.setLayout(null);
+		
+		this.setLayout(baseLayout);
+		
 	}
 	private void setupLayout()
 	{

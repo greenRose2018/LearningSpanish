@@ -2,6 +2,7 @@ package vocab.view;
 
 import javax.swing.JPanel;
 import useful.controller.SpanishController;
+import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
 
@@ -9,6 +10,9 @@ public class SpanishPanel extends JPanel
 {
 	private SpanishController appController;
 	private SpringLayout baseLayout;
+	
+	private JLabel titleForMenu;
+	private JLabel titleForVerbs;
 	
 	private JButton foodBtn;
 	private JButton verbsBtn;
@@ -24,38 +28,52 @@ public class SpanishPanel extends JPanel
 		baseLayout = new SpringLayout();
 		mainPanel = new JPanel();
 		
-		foodBtn = new JButton("Foods");
-		
-		foodBtn.setBounds(226, 100, 67, 25);
-		
+		titleForMenu = new JLabel("Main Menu");
+		titleForMenu.setHorizontalAlignment(SwingConstants.CENTER);
+		titleForMenu.setLocation(165, 33);
+		titleForMenu.setSize(83, 37);
+		titleForMenu.setBackground(Color.GRAY);
+		titleForVerbs = new JLabel("Verbs In Spanish");
+		titleForVerbs.setLocation(250, 225);
+		titleForVerbs.setSize(140, 40);
+
+		foodBtn = new JButton("Foods");	
+		foodBtn.setBounds(238, 83, 116, 25);
+
 		verbsBtn = new JButton("Verbs");
-		
-		verbsBtn.setBounds(63, 100, 65, 25);
+		verbsBtn.setBounds(96, 83, 90, 25);
 		
 		foodPanel = new JPanel();
+		foodPanel.setLayout(null);
+		
 		verbsPanel = new JPanel();
+		verbsPanel.setLayout(null);
+		
 		
 		setupPanel();
+		setupLayout();
 	}
 	private void setupPanel()
 	{
+		//Layout
+		this.setLayout(baseLayout);
 		
 		//mainPanel
 		this.add(mainPanel);
 		mainPanel.setLayout(null);
 		mainPanel.add(verbsBtn);
 		mainPanel.add(foodBtn);
+		mainPanel.add(titleForMenu);
 		
 		//FoodPanel
 		this.add(foodPanel);
-		foodPanel.setLayout(null);
-		
+		foodPanel.setVisible(false);
+				
 		//VerbsPanel 
 		this.add(verbsPanel);
-		verbsPanel.setLayout(null);
-		
-		this.setLayout(baseLayout);
-		
+		verbsPanel.setVisible(false);
+		verbsPanel.add(titleForVerbs);
+
 	}
 	private void setupLayout()
 	{

@@ -52,6 +52,7 @@ public class SpanishPanel extends JPanel
 		
 		setupPanel();
 		setupLayout();
+		setupListeners();
 	}
 	private void setupPanel()
 	{
@@ -81,17 +82,24 @@ public class SpanishPanel extends JPanel
 		baseLayout.putConstraint(SpringLayout.WEST, mainPanel, 0, SpringLayout.WEST, this);
 		baseLayout.putConstraint(SpringLayout.SOUTH, mainPanel, 0, SpringLayout.SOUTH, this);
 		baseLayout.putConstraint(SpringLayout.EAST, mainPanel, 0, SpringLayout.EAST, this);
-		baseLayout.putConstraint(SpringLayout.NORTH, foodBtn, 101, SpringLayout.NORTH, this);
-		baseLayout.putConstraint(SpringLayout.EAST, foodBtn, -314, SpringLayout.EAST, this);
-		baseLayout.putConstraint(SpringLayout.NORTH, verbsBtn, 0, SpringLayout.NORTH, foodBtn);
-		baseLayout.putConstraint(SpringLayout.WEST, verbsBtn, 33, SpringLayout.EAST, foodBtn);
-		baseLayout.putConstraint(SpringLayout.NORTH, foodPanel, 34, SpringLayout.NORTH, this);
-		baseLayout.putConstraint(SpringLayout.WEST, foodPanel, 40, SpringLayout.WEST, this);
-		baseLayout.putConstraint(SpringLayout.NORTH, verbsPanel, 10, SpringLayout.NORTH, this);
-		baseLayout.putConstraint(SpringLayout.WEST, verbsPanel, 10, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.NORTH, foodPanel, 0, SpringLayout.NORTH, this);
+		baseLayout.putConstraint(SpringLayout.WEST, foodPanel, 0, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.SOUTH, foodPanel, 0, SpringLayout.SOUTH, this);
+		baseLayout.putConstraint(SpringLayout.EAST, foodPanel, 0, SpringLayout.EAST, this);
+		baseLayout.putConstraint(SpringLayout.NORTH, verbsPanel, 0, SpringLayout.NORTH, this);
+		baseLayout.putConstraint(SpringLayout.WEST, verbsPanel, 0, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.SOUTH, verbsPanel, 0, SpringLayout.SOUTH, this);
+		baseLayout.putConstraint(SpringLayout.EAST, verbsPanel, 0, SpringLayout.EAST, this);
 	}
 	private void setupListeners()
 	{
-		
+		verbsBtn.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				mainPanel.setVisible(false);
+				verbsPanel.setVisible(true);
+			}
+		});
 	}
 }

@@ -86,6 +86,16 @@ public class SpanishPanel extends JPanel
 				verbsPanel.setVisible(true);
 			}
 		});
+		backBtnVerbs.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				mainPanel.setVisible(true);
+				verbsPanel.setVisible(false);
+			}
+			
+		});
+	}
 	//Helper Methods
 	private void setupMainMenuPanel()
 	{

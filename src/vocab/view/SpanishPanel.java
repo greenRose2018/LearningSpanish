@@ -31,24 +31,11 @@ public class SpanishPanel extends JPanel
 		verbsPanel = new JPanel();
 		
 		titleForMenu = new JLabel("Main Menu");
-		titleForMenu.setHorizontalAlignment(SwingConstants.CENTER);
-		titleForMenu.setLocation(165, 33);
-		titleForMenu.setSize(83, 37);
-		titleForMenu.setBackground(Color.GRAY);
 		titleForVerbs = new JLabel("Verbs In Spanish");
-		titleForVerbs.setLocation(250, 225);
-		titleForVerbs.setSize(140, 40);
+		titleForVerbs.setHorizontalAlignment(SwingConstants.CENTER);
 
 		foodBtn = new JButton("Foods");	
-		foodBtn.setBounds(238, 83, 116, 25);
-
 		verbsBtn = new JButton("Verbs");
-		verbsBtn.setBounds(96, 83, 90, 25);
-		
-		foodPanel.setLayout(null);
-		
-		verbsPanel.setLayout(null);
-		
 		backBtnVerbs = new JButton("Back");
 		
 		setupPanel();
@@ -57,8 +44,11 @@ public class SpanishPanel extends JPanel
 	}
 	private void setupPanel()
 	{
-		//Layout
-		this.setLayout(baseLayout);
+		//layout
+		setLayout(new CardLayout(0, 0));		
+		mainPanel.setLayout(null);
+		foodPanel.setLayout(null);
+		verbsPanel.setLayout(null);
 		
 		//mainPanel
 		this.add(mainPanel);
@@ -79,18 +69,19 @@ public class SpanishPanel extends JPanel
 	}
 	private void setupLayout()
 	{
-		baseLayout.putConstraint(SpringLayout.NORTH, mainPanel, 0, SpringLayout.NORTH, this);
-		baseLayout.putConstraint(SpringLayout.WEST, mainPanel, 0, SpringLayout.WEST, this);
-		baseLayout.putConstraint(SpringLayout.SOUTH, mainPanel, 0, SpringLayout.SOUTH, this);
-		baseLayout.putConstraint(SpringLayout.EAST, mainPanel, 0, SpringLayout.EAST, this);
-		baseLayout.putConstraint(SpringLayout.NORTH, foodPanel, 0, SpringLayout.NORTH, this);
-		baseLayout.putConstraint(SpringLayout.WEST, foodPanel, 0, SpringLayout.WEST, this);
-		baseLayout.putConstraint(SpringLayout.SOUTH, foodPanel, 0, SpringLayout.SOUTH, this);
-		baseLayout.putConstraint(SpringLayout.EAST, foodPanel, 0, SpringLayout.EAST, this);
-		baseLayout.putConstraint(SpringLayout.NORTH, verbsPanel, 0, SpringLayout.NORTH, this);
-		baseLayout.putConstraint(SpringLayout.WEST, verbsPanel, 0, SpringLayout.WEST, this);
-		baseLayout.putConstraint(SpringLayout.SOUTH, verbsPanel, 0, SpringLayout.SOUTH, this);
-		baseLayout.putConstraint(SpringLayout.EAST, verbsPanel, 0, SpringLayout.EAST, this);
+		titleForMenu.setHorizontalAlignment(SwingConstants.CENTER);
+		titleForMenu.setLocation(182, 13);
+		titleForMenu.setSize(83, 37);
+		
+		titleForVerbs.setLocation(155, 13);
+		titleForVerbs.setSize(140, 40);
+		
+		foodBtn.setBounds(231, 83, 116, 25);
+		verbsBtn.setBounds(90, 83, 90, 25);
+		backBtnVerbs.setLocation(351, 254);
+		backBtnVerbs.setSize(87, 33);
+		
+		
 	}
 	private void setupListeners()
 	{

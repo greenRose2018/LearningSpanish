@@ -15,6 +15,7 @@ public class SpanishPanel extends JPanel
 	
 	private JButton foodBtn;
 	private JButton verbsBtn;
+	private JButton backBtnVerbs;
 	
 	private JPanel foodPanel;
 	private JPanel verbsPanel;
@@ -26,6 +27,8 @@ public class SpanishPanel extends JPanel
 		this.appController = appController;
 		
 		mainPanel = new JPanel();
+		foodPanel = new JPanel();
+		verbsPanel = new JPanel();
 		
 		titleForMenu = new JLabel("Main Menu");
 		titleForMenu.setHorizontalAlignment(SwingConstants.CENTER);
@@ -42,12 +45,11 @@ public class SpanishPanel extends JPanel
 		verbsBtn = new JButton("Verbs");
 		verbsBtn.setBounds(96, 83, 90, 25);
 		
-		foodPanel = new JPanel();
 		foodPanel.setLayout(null);
 		
-		verbsPanel = new JPanel();
 		verbsPanel.setLayout(null);
 		
+		backBtnVerbs = new JButton("Back");
 		
 		setupPanel();
 		setupLayout();
@@ -100,5 +102,8 @@ public class SpanishPanel extends JPanel
 				verbsPanel.setVisible(true);
 			}
 		});
+		this.add(mainPanel, "name_364289695107993");
+		this.add(verbsPanel, "name_364289744103657");
+		this.add(foodPanel, "name_364289733314566");
 	}
 }

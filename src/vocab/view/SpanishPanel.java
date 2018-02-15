@@ -51,20 +51,13 @@ public class SpanishPanel extends JPanel
 		verbsPanel.setLayout(null);
 		
 		//mainPanel
-		this.add(mainPanel);
-		mainPanel.setLayout(null);
-		mainPanel.add(verbsBtn);
-		mainPanel.add(foodBtn);
-		mainPanel.add(titleForMenu);
+		setupMainMenuPanel();
 		
 		//FoodPanel
-		this.add(foodPanel);
-		foodPanel.setVisible(false);
+		setupFoodsPanel();
 				
 		//VerbsPanel 
-		this.add(verbsPanel);
-		verbsPanel.setVisible(false);
-		verbsPanel.add(titleForVerbs);
+		setupVerbsPanel();
 
 	}
 	private void setupLayout()
@@ -93,8 +86,25 @@ public class SpanishPanel extends JPanel
 				verbsPanel.setVisible(true);
 			}
 		});
+	//Helper Methods
+	private void setupMainMenuPanel()
+	{
 		this.add(mainPanel, "name_364289695107993");
+		mainPanel.setLayout(null);
+		mainPanel.add(verbsBtn);
+		mainPanel.add(foodBtn);
+		mainPanel.add(titleForMenu);
+	}
+	private void setupVerbsPanel()
+	{
 		this.add(verbsPanel, "name_364289744103657");
+		verbsPanel.setVisible(false);
+		verbsPanel.add(titleForVerbs);
+		verbsPanel.add(backBtnVerbs);
+	}
+	private void setupFoodsPanel()
+	{
 		this.add(foodPanel, "name_364289733314566");
+		foodPanel.setVisible(false);
 	}
 }

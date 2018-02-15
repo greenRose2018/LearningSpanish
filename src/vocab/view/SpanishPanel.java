@@ -9,7 +9,6 @@ import javax.swing.*;
 public class SpanishPanel extends JPanel
 {
 	private SpanishController appController;
-	private SpringLayout baseLayout;
 	
 	private JLabel titleForMenu;
 	private JLabel titleForVerbs;
@@ -25,7 +24,7 @@ public class SpanishPanel extends JPanel
 	{
 		super();
 		this.appController = appController;
-		baseLayout = new SpringLayout();
+		
 		mainPanel = new JPanel();
 		
 		titleForMenu = new JLabel("Main Menu");

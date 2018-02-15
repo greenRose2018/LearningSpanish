@@ -32,7 +32,7 @@ public class SpanishPanel extends JPanel
 		
 		titleForMenu = new JLabel("Main Menu");
 		titleForVerbs = new JLabel("Verbs In Spanish");
-		titleForVerbs.setHorizontalAlignment(SwingConstants.CENTER);
+		
 
 		foodBtn = new JButton("Foods");	
 		verbsBtn = new JButton("Verbs");
@@ -68,6 +68,7 @@ public class SpanishPanel extends JPanel
 		
 		titleForVerbs.setLocation(155, 13);
 		titleForVerbs.setSize(140, 40);
+		titleForVerbs.setHorizontalAlignment(SwingConstants.CENTER);
 		
 		foodBtn.setBounds(231, 83, 116, 25);
 		verbsBtn.setBounds(90, 83, 90, 25);

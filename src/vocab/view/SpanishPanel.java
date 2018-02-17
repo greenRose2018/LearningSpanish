@@ -9,13 +9,28 @@ import javax.swing.*;
 public class SpanishPanel extends JPanel
 {
 	private SpanishController appController;
-	
+
+	//Labels for panels
+	private JLabel titleForFood;
 	private JLabel titleForMenu;
 	private JLabel titleForVerbs;
 	
+	//main menu btns
 	private JButton foodBtn;
 	private JButton verbsBtn;
+	
+	//btns inside of the foodPanel
+	private JButton fruitBtn;
+	private JButton vegatablesBtn;
+	private JButton meatBtn;
+	private JButton seafoodBtn;
+	private JButton pasteryBtn;
+	private JButton bakeryGoodsBtn;
+	
+	//back btns
 	private JButton backBtnVerbs;
+	private JButton backBtnFood;
+	
 	
 	private JPanel foodPanel;
 	private JPanel verbsPanel;
@@ -32,11 +47,29 @@ public class SpanishPanel extends JPanel
 		
 		titleForMenu = new JLabel("Main Menu");
 		titleForVerbs = new JLabel("Verbs In Spanish");
+		titleForFood = new JLabel("Foods in Spanish");
+		titleForFood.setHorizontalAlignment(SwingConstants.CENTER);
+		titleForFood.setBounds(170, 11, 110, 30);
 		
-
 		foodBtn = new JButton("Foods");	
 		verbsBtn = new JButton("Verbs");
 		backBtnVerbs = new JButton("Back");
+		backBtnFood = new JButton("Back");
+		backBtnFood.setBounds(379, 269, 61, 20);
+		
+		fruitBtn = new JButton("Fruits/Frutas");
+		fruitBtn.setLocation(44, 97);
+		fruitBtn.setSize(149, 20);
+		vegatablesBtn = new JButton("Vegetables/Vegetales");
+		vegatablesBtn.setBounds(233, 97, 149, 20);
+		meatBtn = new JButton("Meat/Carne");
+		meatBtn.setBounds(44, 130, 149, 20);
+		seafoodBtn = new JButton("Seafood/Mariscos");
+		seafoodBtn.setBounds(233, 128, 149, 20);
+		pasteryBtn = new JButton("Pastry/Pastel");
+		pasteryBtn.setBounds(44, 161, 149, 20);
+		bakeryGoodsBtn = new JButton("Bakery Goods/\r\nProductos de Panader\u00EDa");
+		bakeryGoodsBtn.setBounds(233, 159, 149, 20);
 		
 		setupPanel();
 		setupLayout();
@@ -116,6 +149,14 @@ public class SpanishPanel extends JPanel
 	private void setupFoodsPanel()
 	{
 		this.add(foodPanel, "name_364289733314566");
+		foodPanel.add(titleForFood);
 		foodPanel.setVisible(false);
+		foodPanel.add(backBtnFood);
+		foodPanel.add(fruitBtn);
+		foodPanel.add(vegatablesBtn);
+		foodPanel.add(meatBtn);
+		foodPanel.add(seafoodBtn);
+		foodPanel.add(pasteryBtn);
+		foodPanel.add(bakeryGoodsBtn);
 	}
 }

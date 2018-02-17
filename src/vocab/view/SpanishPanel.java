@@ -120,6 +120,14 @@ public class SpanishPanel extends JPanel
 				verbsPanel.setVisible(true);
 			}
 		});
+		foodBtn.addActionListener(new ActionListener()
+				{
+			public void actionPerformed(ActionEvent click)
+			{
+				mainPanel.setVisible(false);
+				foodPanel.setVisible(true);
+			}
+				});
 		backBtnVerbs.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent click)
@@ -128,6 +136,14 @@ public class SpanishPanel extends JPanel
 				verbsPanel.setVisible(false);
 			}
 			
+		});
+		backBtnFood.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				mainPanel.setVisible(true);
+				foodPanel.setVisible(false);
+			}
 		});
 	}
 	//Helper Methods

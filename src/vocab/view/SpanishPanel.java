@@ -31,20 +31,38 @@ public class SpanishPanel extends JPanel
 	private JButton backBtnVerbs;
 	private JButton backBtnFood;
 	
-	
+	//main panels
 	private JPanel foodPanel;
 	private JPanel verbsPanel;
 	private JPanel mainPanel;
+	
+	//under Food Panel
+	private JPanel fruitPanel;
+	private JPanel vegatablePanel;
+	private JPanel meatPanel;
+	private JPanel seafoodPanel;
+	private JPanel pastryPanel;
+	private JPanel bakerygoodsPanel;
 
 	public SpanishPanel(SpanishController appController)
 	{
 		super();
 		this.appController = appController;
 		
+		//main panels
 		mainPanel = new JPanel();
 		foodPanel = new JPanel();
 		verbsPanel = new JPanel();
 		
+		//under food panel
+		fruitPanel = new JPanel();
+		vegatablePanel  = new JPanel();
+		meatPanel= new JPanel();
+		seafoodPanel = new JPanel();
+		pastryPanel = new JPanel();
+		bakerygoodsPanel = new JPanel();
+		
+		//titles for panels
 		titleForMenu = new JLabel("Main Menu");
 		titleForVerbs = new JLabel("Verbs In Spanish");
 		titleForFood = new JLabel("Foods in Spanish");

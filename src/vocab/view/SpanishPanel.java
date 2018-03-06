@@ -48,28 +48,18 @@ public class SpanishPanel extends JPanel
 		titleForMenu = new JLabel("Main Menu");
 		titleForVerbs = new JLabel("Verbs In Spanish");
 		titleForFood = new JLabel("Foods in Spanish");
-		titleForFood.setHorizontalAlignment(SwingConstants.CENTER);
-		titleForFood.setBounds(170, 11, 110, 30);
 		
 		foodBtn = new JButton("Foods");	
 		verbsBtn = new JButton("Verbs");
 		backBtnVerbs = new JButton("Back");
 		backBtnFood = new JButton("Back");
-		backBtnFood.setBounds(379, 269, 61, 20);
 		
 		fruitBtn = new JButton("Fruits/Frutas");
-		fruitBtn.setLocation(44, 97);
-		fruitBtn.setSize(149, 20);
 		vegatablesBtn = new JButton("Vegetables/Vegetales");
-		vegatablesBtn.setBounds(233, 97, 149, 20);
 		meatBtn = new JButton("Meat/Carne");
-		meatBtn.setBounds(44, 130, 149, 20);
 		seafoodBtn = new JButton("Seafood/Mariscos");
-		seafoodBtn.setBounds(233, 128, 149, 20);
 		pasteryBtn = new JButton("Pastry/Pastel");
-		pasteryBtn.setBounds(44, 161, 149, 20);
 		bakeryGoodsBtn = new JButton("Bakery Goods/\r\nProductos de Panader\u00EDa");
-		bakeryGoodsBtn.setBounds(233, 159, 149, 20);
 		
 		setupPanel();
 		setupLayout();
@@ -96,19 +86,29 @@ public class SpanishPanel extends JPanel
 	private void setupLayout()
 	{
 		titleForMenu.setHorizontalAlignment(SwingConstants.CENTER);
-		titleForMenu.setLocation(182, 13);
+		titleForMenu.setLocation(208, 6);
 		titleForMenu.setSize(83, 37);
 		
 		titleForVerbs.setLocation(155, 13);
 		titleForVerbs.setSize(140, 40);
 		titleForVerbs.setHorizontalAlignment(SwingConstants.CENTER);
 		
-		foodBtn.setBounds(231, 83, 116, 25);
-		verbsBtn.setBounds(90, 83, 90, 25);
-		backBtnVerbs.setLocation(351, 254);
+		titleForFood.setHorizontalAlignment(SwingConstants.CENTER);
+		titleForFood.setBounds(195, 11, 110, 30);
+		
+		foodBtn.setBounds(340, 124, 83, 25);
+		verbsBtn.setBounds(98, 124, 79, 25);
+		backBtnVerbs.setLocation(18, 380);
 		backBtnVerbs.setSize(87, 33);
 		
-		
+		backBtnFood.setBounds(20, 380, 61, 20);
+		seafoodBtn.setBounds(301, 130, 149, 20);
+		fruitBtn.setLocation(44, 97);
+		fruitBtn.setSize(149, 20);
+		vegatablesBtn.setBounds(301, 97, 149, 20);
+		meatBtn.setBounds(44, 130, 149, 20);
+		pasteryBtn.setBounds(44, 161, 149, 20);
+		bakeryGoodsBtn.setBounds(116, 260, 279, 20);
 	}
 	private void setupListeners()
 	{

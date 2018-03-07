@@ -9,6 +9,7 @@ import javax.swing.*;
 public class SpanishPanel extends JPanel
 {
 	private SpanishController appController;
+	private SpringLayout baseLayout;
 
 	//Labels for panels
 	private JLabel titleForFood;
@@ -48,6 +49,7 @@ public class SpanishPanel extends JPanel
 	{
 		super();
 		this.appController = appController;
+		baseLayout = new SpringLayout();
 		
 		//main panels
 		mainPanel = new JPanel();
@@ -72,6 +74,7 @@ public class SpanishPanel extends JPanel
 		backBtnVerbs = new JButton("Back");
 		backBtnFood = new JButton("Back");
 		
+		//btns on the foodPanel
 		fruitBtn = new JButton("Fruits/Frutas");
 		vegatablesBtn = new JButton("Vegetables/Vegetales");
 		meatBtn = new JButton("Meat/Carne");
@@ -86,6 +89,9 @@ public class SpanishPanel extends JPanel
 	private void setupPanel()
 	{
 		//layout
+		fruitPanel.setLayout(baseLayout);
+		this.add(fruitPanel);
+		
 		setLayout(new CardLayout(0, 0));		
 		mainPanel.setLayout(null);
 		foodPanel.setLayout(null);

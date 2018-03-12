@@ -89,22 +89,24 @@ public class SpanishPanel extends JPanel
 	private void setupPanel()
 	{
 		//layout
-		fruitPanel.setLayout(baseLayout);
-		this.add(fruitPanel);
-		
 		setLayout(new CardLayout(0, 0));		
 		mainPanel.setLayout(null);
 		foodPanel.setLayout(null);
 		verbsPanel.setLayout(null);
+		
+		fruitPanel.setLayout(baseLayout);
 		
 		//mainPanel
 		setupMainMenuPanel();
 		
 		//FoodPanel
 		setupFoodsPanel();
-				
+		this.add(fruitPanel);	
+		
 		//VerbsPanel 
 		setupVerbsPanel();
+		
+		
 
 	}
 	private void setupLayout()
@@ -121,7 +123,7 @@ public class SpanishPanel extends JPanel
 		titleForFood.setBounds(195, 11, 110, 30);
 		
 		foodBtn.setBounds(340, 124, 83, 25);
-		verbsBtn.setBounds(98, 124, 79, 25);
+		verbsBtn.setBounds(89, 124, 79, 25);
 		backBtnVerbs.setLocation(18, 380);
 		backBtnVerbs.setSize(87, 33);
 		

@@ -118,11 +118,11 @@ public class SpanishPanel extends JPanel
 		descriptionArea.setBounds(240, 214, 254, 186);
 		catergoryDropDown.setBounds(240, 40, 254, 20);
 		itemDropDown.setBounds(240, 72, 254, 30);
-		englishLabel.setBounds(232, 114, 130, 30);
-		spanishLabel.setBounds(240, 150, 120, 30);
+		englishLabel.setBounds(240, 114, 65, 30);
+		spanishLabel.setBounds(240, 155, 65, 30);
 		pictureLabel.setBounds(6, 40, 222, 359);
-		englishBox.setBounds(364, 114, 130, 20);
-		spanishBox.setBounds(364, 160, 130, 20);
+		englishBox.setBounds(327, 119, 167, 20);
+		spanishBox.setBounds(327, 160, 167, 20);
 		descriptionArea.setEditable(false);
 	}
 	

@@ -55,8 +55,8 @@ public class SpanishPanel extends JPanel
 		descriptionArea = new JTextArea(5,10);
 		catergoryDropDown = new JComboBox();
 		itemDropDown = new JComboBox();
-		englishLabel = new JLabel();
-		spanishLabel = new JLabel();
+		englishLabel = new JLabel("English:");
+		spanishLabel = new JLabel("Spanish:");
 		pictureLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")),JLabel.CENTER);
 		englishBox = new JTextField();
 		spanishBox = new JTextField();

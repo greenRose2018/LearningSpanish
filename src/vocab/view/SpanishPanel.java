@@ -21,12 +21,6 @@ public class SpanishPanel extends JPanel
 	private JButton verbsBtn;
 	
 	//btns inside of the foodPanel
-	private JButton fruitBtn;
-	private JButton vegatablesBtn;
-	private JButton meatBtn;
-	private JButton seafoodBtn;
-	private JButton pasteryBtn;
-	private JButton bakeryGoodsBtn;
 	
 	//back btns
 	private JButton backBtnVerbs;
@@ -38,12 +32,7 @@ public class SpanishPanel extends JPanel
 	private JPanel mainPanel;
 	
 	//under Food Panel
-	private JPanel fruitPanel;
-	private JPanel vegatablePanel;
-	private JPanel meatPanel;
-	private JPanel seafoodPanel;
-	private JPanel pastryPanel;
-	private JPanel bakerygoodsPanel;
+	
 
 	public SpanishPanel(SpanishController appController)
 	{
@@ -57,12 +46,7 @@ public class SpanishPanel extends JPanel
 		verbsPanel = new JPanel();
 		
 		//under food panel
-		fruitPanel = new JPanel();
-		vegatablePanel  = new JPanel();
-		meatPanel= new JPanel();
-		seafoodPanel = new JPanel();
-		pastryPanel = new JPanel();
-		bakerygoodsPanel = new JPanel();
+		
 		
 		//titles for panels
 		titleForMenu = new JLabel("Main Menu");
@@ -75,12 +59,7 @@ public class SpanishPanel extends JPanel
 		backBtnFood = new JButton("Back");
 		
 		//btns on the foodPanel
-		fruitBtn = new JButton("Fruits/Frutas");
-		vegatablesBtn = new JButton("Vegetables/Vegetales");
-		meatBtn = new JButton("Meat/Carne");
-		seafoodBtn = new JButton("Seafood/Mariscos");
-		pasteryBtn = new JButton("Pastry/Pastel");
-		bakeryGoodsBtn = new JButton("Bakery Goods/\r\nProductos de Panader\u00EDa");
+		
 		
 		setupPanel();
 		setupLayout();
@@ -94,14 +73,11 @@ public class SpanishPanel extends JPanel
 		foodPanel.setLayout(null);
 		verbsPanel.setLayout(null);
 		
-		fruitPanel.setLayout(baseLayout);
-		
 		//mainPanel
 		setupMainMenuPanel();
 		
 		//FoodPanel
 		setupFoodsPanel();
-		this.add(fruitPanel);	
 		
 		//VerbsPanel 
 		setupVerbsPanel();
@@ -128,13 +104,7 @@ public class SpanishPanel extends JPanel
 		backBtnVerbs.setSize(87, 33);
 		
 		backBtnFood.setBounds(20, 380, 61, 20);
-		seafoodBtn.setBounds(301, 130, 149, 20);
-		fruitBtn.setLocation(44, 97);
-		fruitBtn.setSize(149, 20);
-		vegatablesBtn.setBounds(301, 97, 149, 20);
-		meatBtn.setBounds(44, 130, 149, 20);
-		pasteryBtn.setBounds(44, 161, 149, 20);
-		bakeryGoodsBtn.setBounds(116, 260, 279, 20);
+		
 	}
 	private void setupListeners()
 	{
@@ -194,11 +164,5 @@ public class SpanishPanel extends JPanel
 		foodPanel.add(titleForFood);
 		foodPanel.setVisible(false);
 		foodPanel.add(backBtnFood);
-		foodPanel.add(fruitBtn);
-		foodPanel.add(vegatablesBtn);
-		foodPanel.add(meatBtn);
-		foodPanel.add(seafoodBtn);
-		foodPanel.add(pasteryBtn);
-		foodPanel.add(bakeryGoodsBtn);
 	}
 }

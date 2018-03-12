@@ -23,7 +23,7 @@ public class SpanishPanel extends JPanel
 	
 	//back btns
 	private JButton backBtnVerbs;
-	private JButton backBtnFood;
+	private JButton backBtnFoods;
 	
 	//main panels
 	private JPanel foodPanel;
@@ -69,7 +69,7 @@ public class SpanishPanel extends JPanel
 		foodBtn = new JButton("Foods");	
 		verbsBtn = new JButton("Verbs");
 		backBtnVerbs = new JButton("Back");
-		backBtnFood = new JButton("Back");	
+		backBtnFoods = new JButton("Back");
 		
 		setupPanel();
 		setupLayout();
@@ -114,7 +114,7 @@ public class SpanishPanel extends JPanel
 		backBtnVerbs.setLocation(18, 380);
 		backBtnVerbs.setSize(87, 33);
 		
-		backBtnFood.setBounds(433, 403, 61, 20);
+		backBtnFoods.setBounds(413, 404, 81, 29);
 		descriptionArea.setBounds(240, 214, 254, 178);
 		catergoryDropDown.setBounds(240, 40, 254, 20);
 		itemDropDown.setBounds(240, 72, 254, 30);
@@ -153,7 +153,7 @@ public class SpanishPanel extends JPanel
 			}
 			
 		});
-		backBtnFood.addActionListener(new ActionListener()
+		backBtnFoods.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent click)
 			{
@@ -186,7 +186,7 @@ public class SpanishPanel extends JPanel
 		this.add(foodPanel, "name_364289733314566");
 		foodPanel.add(titleForFood);
 		foodPanel.setVisible(false);
-		foodPanel.add(backBtnFood);
+		foodPanel.add(backBtnFoods);
 		foodPanel.add(descriptionArea);
 		foodPanel.add(catergoryDropDown);
 		foodPanel.add(itemDropDown);
@@ -195,6 +195,7 @@ public class SpanishPanel extends JPanel
 		foodPanel.add(englishBox);
 		foodPanel.add(spanishBox);
 		foodPanel.add(pictureLabel);
+		foodPanel.add(backBtnFoods);
 		
 	}
 }

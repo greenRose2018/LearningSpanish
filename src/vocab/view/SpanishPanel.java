@@ -9,7 +9,6 @@ import javax.swing.*;
 public class SpanishPanel extends JPanel
 {
 	private SpanishController appController;
-	private SpringLayout baseLayout;
 
 	//Labels for panels
 	private JLabel titleForFood;
@@ -31,14 +30,21 @@ public class SpanishPanel extends JPanel
 	private JPanel verbsPanel;
 	private JPanel mainPanel;
 	
-	//under Food Panel
+	//Food Panel
+	private JTextArea descriptionArea;
+	private JComboBox catergoryDropDown;
+	private JComboBox itemDropDown;
+	private JLabel englishLabel;
+	private JLabel spanishLabel;
+	private JLabel pictureLabel;
+	private JTextField englishBox;
+	private JTextField spanishBox;
 	
 
 	public SpanishPanel(SpanishController appController)
 	{
 		super();
 		this.appController = appController;
-		baseLayout = new SpringLayout();
 		
 		//main panels
 		mainPanel = new JPanel();
@@ -46,7 +52,14 @@ public class SpanishPanel extends JPanel
 		verbsPanel = new JPanel();
 		
 		//under food panel
-		
+		descriptionArea = new JTextArea(5,10);
+		catergoryDropDown = new JComboBox();
+		itemDropDown = new JComboBox();
+		englishLabel = new JLabel();
+		spanishLabel = new JLabel();
+		pictureLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")),JLabel.CENTER);
+		englishBox = new JTextField();
+		spanishBox = new JTextField();
 		
 		//titles for panels
 		titleForMenu = new JLabel("Main Menu");

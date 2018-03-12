@@ -51,7 +51,7 @@ public class SpanishPanel extends JPanel
 		foodPanel = new JPanel();
 		verbsPanel = new JPanel();
 		
-		//under food panel
+		//Food panel
 		descriptionArea = new JTextArea(5,10);
 		catergoryDropDown = new JComboBox();
 		itemDropDown = new JComboBox();
@@ -69,10 +69,7 @@ public class SpanishPanel extends JPanel
 		foodBtn = new JButton("Foods");	
 		verbsBtn = new JButton("Verbs");
 		backBtnVerbs = new JButton("Back");
-		backBtnFood = new JButton("Back");
-		
-		//btns on the foodPanel
-		
+		backBtnFood = new JButton("Back");	
 		
 		setupPanel();
 		setupLayout();
@@ -177,5 +174,14 @@ public class SpanishPanel extends JPanel
 		foodPanel.add(titleForFood);
 		foodPanel.setVisible(false);
 		foodPanel.add(backBtnFood);
+		foodPanel.add(descriptionArea);
+		foodPanel.add(catergoryDropDown);
+		foodPanel.add(itemDropDown);
+		foodPanel.add(englishLabel);
+		foodPanel.add(spanishLabel);
+		foodPanel.add(englishBox);
+		foodPanel.add(spanishBox);
+		foodPanel.add(pictureLabel);
+		
 	}
 }

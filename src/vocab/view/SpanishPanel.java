@@ -164,6 +164,11 @@ public class SpanishPanel extends JPanel
 		});
 	}
 	
+	private void setupComboBox()
+	{
+		DefaultComboBoxModel foodModel = new DefaultComboBoxModel(appController.convertFood());
+		categoryDropDown.setModel(foodModel);
+	}
 	//Helper Methods
 	private void setupMainMenuPanel()
 	{

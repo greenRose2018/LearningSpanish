@@ -1,4 +1,4 @@
-package vocab.model.food.Fruits;
+package vocab.model.food.fruits;
 
 public class Grapes extends Fruits
 {

@@ -1,4 +1,4 @@
-package vocab.model.food.Fruits;
+package vocab.model.food.fruits;
 
 import vocab.model.FoodVocab;
 import vocab.model.food.Food;

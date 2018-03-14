@@ -11,12 +11,12 @@ import vocab.model.food.fruits.*;
 
 public class SpanishController
 {
-	private List<Food> fruits;
+	private List<Fruits> fruits;
 	private SpanishFrame mainFrame;
 	
 	public SpanishController()
 	{
-		fruits = new ArrayList<Food>();
+		fruits = new ArrayList<Fruits>();
 		buildFruitVocab();
 		
 		mainFrame = new SpanishFrame(this);
@@ -48,5 +48,6 @@ public class SpanishController
 		{
 			names[index] = fruits.get(index).getWord();
 		}
+		return names;
 	}
 }

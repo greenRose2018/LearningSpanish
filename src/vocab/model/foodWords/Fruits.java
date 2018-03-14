@@ -2,22 +2,22 @@ package vocab.model.foodWords;
 
 import vocab.model.FoodVocab;
 
-public class Bannana extends FoodVocab implements Food
+public class Fruits extends FoodVocab implements Food
 {
-	public Bannana()
+	public Fruits()
 	{
-		super("Bannana", "Fruit");
+		super("Fruit", "Fruit");
 		
 	}
 	
 	public String englishWord()
 	{
-		return "Bannana";
+		return "Fruit";
 	}
 	
 	public String spanishWord()
 	{
-		return "Platano";
+		return "Fruita";
 	}
 	
 	public String categoryFood()

@@ -1,6 +1,6 @@
 package vocab.model;
 
-//import java.util.ArrayList;
+import java.util.ArrayList;
 
 public class FoodVocab 
 {
@@ -13,40 +13,40 @@ public class FoodVocab
 		this.typeOfFruit = typeOfFruit;
 	}
 	
-//	public String[] getFoodType()
-//	{
-//		String [] types = null;
-//		ArrayList<String> parentType = new ArrayList<String>();
-//		Class<?> currentClass = this.getClass();
-//		
-//		while(currentClass.getSuperclass() != null)
-//		{
-//			Class<?> [] foodTypes = currentClass.getInterfaces();
-//			types = new String[foodTypes.length];
-//			
-//			for(int index = 0; index < types.length; index++)
-//			{
-//				String currentInterface = foodTypes[index].getCanonicalName();
-//				String packageName = foodTypes[index].getPackage().getName() + ".";
-//				currentInterface = currentInterface.replace(packageName, "");
-//				if(!parentType.contains(currentInterface))
-//				{
-//					parentType.add(currentInterface);
-//				}
-//			}
-//			
-//			currentClass = currentClass.getSuperclass();
-//		}
-//		
-//		types = new String [parentType.size()];
-//		
-//		for(int index = 0; index < parentType.size(); index++)
-//		{
-//			types[index] = parentType.get(index);
-//		}
-//		
-//		return types;
-//	}
+	public String[] getFoodType()
+	{
+		String [] types = null;
+		ArrayList<String> parentType = new ArrayList<String>();
+		Class<?> currentClass = this.getClass();
+		
+		while(currentClass.getSuperclass() != null)
+		{
+			Class<?> [] foodTypes = currentClass.getInterfaces();
+			types = new String[foodTypes.length];
+			
+			for(int index = 0; index < types.length; index++)
+			{
+				String currentInterface = foodTypes[index].getCanonicalName();
+				String packageName = foodTypes[index].getPackage().getName() + ".";
+				currentInterface = currentInterface.replace(packageName, "");
+				if(!parentType.contains(currentInterface))
+				{
+					parentType.add(currentInterface);
+				}
+			}
+			
+			currentClass = currentClass.getSuperclass();
+		}
+		
+		types = new String [parentType.size()];
+		
+		for(int index = 0; index < parentType.size(); index++)
+		{
+			types[index] = parentType.get(index);
+		}
+		
+		return types;
+	}
 	
 	public String getWord()
 	{

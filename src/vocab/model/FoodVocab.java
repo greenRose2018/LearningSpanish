@@ -4,15 +4,19 @@ import java.util.ArrayList;
 
 public class FoodVocab 
 {
-	private String word;
+	private String englishWord;
+	private String spanishWord;
 	private String typeOfFood;
 	
-	public FoodVocab(String word, String typeOfFood)
+	public FoodVocab(String englishWord, String spanishWord,String typeOfFood)
 	{
-		this.word = word;
+		this.englishWord = englishWord;
+		this.spanishWord = spanishWord;
 		this.typeOfFood = typeOfFood;
 	}
 	
+	
+
 	public String[] getFoodType()
 	{
 		String [] types = null;
@@ -47,10 +51,25 @@ public class FoodVocab
 		
 		return types;
 	}
-	
-	public String getWord()
+	/**
+	 * @return the spanishWord
+	 */
+	public String getSpanishWord()
 	{
-		return word;
+		return spanishWord;
+	}
+
+	/**
+	 * @param spanishWord the spanishWord to set
+	 */
+	public void setSpanishWord(String spanishWord)
+	{
+		this.spanishWord = spanishWord;
+	}
+	
+	public String getEnglishWord()
+	{
+		return englishWord;
 	}
 	
 	public String getTypeOfFruit()
@@ -60,13 +79,13 @@ public class FoodVocab
 	
 	public String getDescription()
 	{
-		String info = "This is a " + word + " a type of " + typeOfFood +"." ;
+		String info = "This is a " + englishWord + " a type of " + typeOfFood +"." ;
 		return info;
 	}
 	
-	public void setWord(String word)
+	public void setEnglishWord(String word)
 	{
-		this.word = word;
+		this.englishWord = word;
 	}
 	
 	public String toString()

@@ -50,7 +50,7 @@ public class SpanishController
 		
 		for (int index = 0; index < fruits.size(); index++)
 		{
-			names[index] = fruits.get(index).getWord();
+			names[index] = fruits.get(index).getEnglishWord();
 		}
 		return names;
 	}

@@ -7,7 +7,7 @@ public class Fruits extends FoodVocab implements Food
 {
 	public Fruits()
 	{
-		super("Fruit", "Fruit");
+		super("Fruit", "Fruita","Fruit");
 	}
 	
 	public String englishWord()

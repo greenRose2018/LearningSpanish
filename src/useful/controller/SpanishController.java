@@ -36,6 +36,10 @@ public class SpanishController
 		fruits.add(new Apple());
 		fruits.add(new Peach());
 	}
+	public List<Fruits> getFruits()
+	{
+		return fruits;
+	}
 	public SpanishFrame getSpanishFrame()
 	{
 		return mainFrame;

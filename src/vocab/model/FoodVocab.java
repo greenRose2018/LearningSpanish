@@ -5,12 +5,12 @@ import java.util.ArrayList;
 public class FoodVocab 
 {
 	private String word;
-	private String typeOfFruit;
+	private String typeOfFood;
 	
-	public FoodVocab(String word, String typeOfFruit)
+	public FoodVocab(String word, String typeOfFood)
 	{
 		this.word = word;
-		this.typeOfFruit = typeOfFruit;
+		this.typeOfFood = typeOfFood;
 	}
 	
 	public String[] getFoodType()
@@ -55,12 +55,12 @@ public class FoodVocab
 	
 	public String getTypeOfFruit()
 	{
-		return typeOfFruit;
+		return typeOfFood;
 	}
 	
 	public String getDescription()
 	{
-		String info = "This is a " + word + " a type of " + typeOfFruit +"." ;
+		String info = "This is a " + word + " a type of " + typeOfFood +"." ;
 		return info;
 	}
 	

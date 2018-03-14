@@ -129,6 +129,15 @@ public class SpanishPanel extends JPanel
 	
 	private void setupListeners()
 	{
+		categoryDropDown.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+				int selectedFoodIndex = categoryDropDown.getSelectedIndex();
+				//updatePokedexInfo(selectedFoodIndex);
+			}
+		});
+		
 		verbsBtn.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent click)

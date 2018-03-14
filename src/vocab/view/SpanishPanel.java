@@ -71,6 +71,7 @@ public class SpanishPanel extends JPanel
 		backBtnVerbs = new JButton("Back");
 		backBtnFoods = new JButton("Back");
 		
+		setupComboBox();
 		setupPanel();
 		setupLayout();
 		setupListeners();
@@ -134,7 +135,7 @@ public class SpanishPanel extends JPanel
 			public void actionPerformed(ActionEvent selection)
 			{
 				int selectedFoodIndex = categoryDropDown.getSelectedIndex();
-				//updatePokedexInfo(selectedFoodIndex);
+				updateFruitInfo(selectedFoodIndex);
 			}
 		});
 		
@@ -179,6 +180,12 @@ public class SpanishPanel extends JPanel
 		categoryDropDown.setModel(foodModel);
 	}
 	//Helper Methods
+	private void updateFruitInfo(int index)
+	{
+		englishBox.setText(appController.getFruits().get(index).getEnglishWord());
+		spanishBox.setText(appController.getFruits().get(index).getSpanishWord());
+	}
+	
 	private void setupMainMenuPanel()
 	{
 		this.add(mainPanel, "name_364289695107993");

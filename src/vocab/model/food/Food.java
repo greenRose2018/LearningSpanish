@@ -1,4 +1,4 @@
-package vocab.model.foodWords;
+package vocab.model.food;
 
 public interface Food
 {

@@ -1,13 +1,13 @@
-package vocab.model.foodWords;
+package vocab.model.food.Fruits;
 
 import vocab.model.FoodVocab;
+import vocab.model.food.Food;
 
 public class Fruits extends FoodVocab implements Food
 {
 	public Fruits()
 	{
 		super("Fruit", "Fruit");
-		
 	}
 	
 	public String englishWord()

@@ -116,8 +116,8 @@ public class SpanishPanel extends JPanel
 		
 		backBtnFoods.setBounds(413, 404, 81, 29);
 		descriptionArea.setBounds(240, 214, 254, 178);
-		catergoryDropDown.setBounds(240, 40, 254, 20);
-		itemDropDown.setBounds(240, 72, 254, 30);
+		catergoryDropDown.setBounds(240, 40, 254, 30);
+		itemDropDown.setBounds(240, 76, 254, 30);
 		englishLabel.setBounds(240, 114, 65, 30);
 		spanishLabel.setBounds(240, 155, 65, 30);
 		pictureLabel.setBounds(6, 40, 222, 352);

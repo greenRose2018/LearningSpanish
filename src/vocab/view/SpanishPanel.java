@@ -203,7 +203,7 @@ public class SpanishPanel extends JPanel
 		foodPanel.setVisible(false);
 		foodPanel.add(backBtnFoods);
 		foodPanel.add(descriptionArea);
-		foodPanel.add(catergoryDropDown);
+		foodPanel.add(categoryDropDown);
 		foodPanel.add(itemDropDown);
 		foodPanel.add(englishLabel);
 		foodPanel.add(spanishLabel);

@@ -36,7 +36,7 @@ public class SpanishPanel extends JPanel
 	private JComboBox itemDropDown;
 	private JLabel englishLabel;
 	private JLabel spanishLabel;
-	private JLabel pictureLabel;
+	private JLabel pictureFruitLabel;
 	private JTextField englishBox;
 	private JTextField spanishBox;
 	
@@ -57,7 +57,7 @@ public class SpanishPanel extends JPanel
 		itemDropDown = new JComboBox();
 		englishLabel = new JLabel("English:");
 		spanishLabel = new JLabel("Spanish:");
-		pictureLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")),JLabel.CENTER);
+		pictureFruitLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")),JLabel.CENTER);
 		englishBox = new JTextField();
 		spanishBox = new JTextField();
 		
@@ -122,7 +122,7 @@ public class SpanishPanel extends JPanel
 		itemDropDown.setBounds(240, 76, 254, 30);
 		englishLabel.setBounds(240, 114, 65, 30);
 		spanishLabel.setBounds(240, 155, 65, 30);
-		pictureLabel.setBounds(6, 40, 222, 352);
+		pictureFruitLabel.setBounds(6, 40, 222, 352);
 		englishBox.setBounds(327, 119, 167, 20);
 		spanishBox.setBounds(327, 160, 167, 20);
 		descriptionArea.setEditable(false);
@@ -216,7 +216,7 @@ public class SpanishPanel extends JPanel
 		foodPanel.add(spanishLabel);
 		foodPanel.add(englishBox);
 		foodPanel.add(spanishBox);
-		foodPanel.add(pictureLabel);
+		foodPanel.add(pictureFruitLabel);
 		foodPanel.add(backBtnFoods);
 		
 	}

@@ -136,6 +136,7 @@ public class SpanishPanel extends JPanel
 			{
 				int selectedFoodIndex = categoryDropDown.getSelectedIndex();
 				updateFruitInfo(selectedFoodIndex);
+				updateFruitImage();
 			}
 		});
 		
@@ -178,8 +179,31 @@ public class SpanishPanel extends JPanel
 	{
 		DefaultComboBoxModel foodModel = new DefaultComboBoxModel(appController.convertFood());
 		categoryDropDown.setModel(foodModel);
+		
+		DefaultComboBoxModel itemModel = new DefaultComboBoxModel(appController.convertFood());
+		itemDropDown.setModel(itemModel);
 	}
 	//Helper Methods
+	private void updateFruitImage()
+	{
+		String path = "/vocab/view/images/";
+		String defaultName = "fruit";
+		String name = itemDropDown.getSelectedItem().toString();
+		String extension = ".png";
+		
+		ImageIcon fruitIcon;
+		
+		try {
+			fruitIcon = new ImageIcon(getClass().getResource(path + name + extension));
+		}
+		catch(NullPointerException missingImageFile)
+		{
+			fruitIcon = new ImageIcon(getClass().getResource(path + defaultName + extension));
+		}
+		pictureFruitLabel.setIcon(fruitIcon);
+		
+	}
+	
 	private void updateFruitInfo(int index)
 	{
 		englishBox.setText(appController.getFruits().get(index).getEnglishWord());

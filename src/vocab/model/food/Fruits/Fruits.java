@@ -9,6 +9,20 @@ public class Fruits extends FoodVocab implements Food
 	{
 		super("Fruit", "Fruita","Fruit");
 	}
+	public Fruits(String english)
+	{
+		super(english,"Fruta","Fruit");
+	}
+	
+	public Fruits(String english, String spanish)
+	{
+		super(english,spanish,"Fruit");
+	}
+	
+	public Fruits(String english, String spanish, String type)
+	{
+		super(english,spanish,type);
+	}
 	
 	public String englishWord()
 	{

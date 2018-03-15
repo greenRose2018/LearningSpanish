@@ -8,16 +8,24 @@ import java.util.List;
 import vocab.model.*;
 import vocab.model.food.*;
 import vocab.model.food.fruits.*;
+import vocab.model.food.bakerygoods.*;
+import vocab.model.food.meats.*;
+import vocab.model.food.pastries.*;
+import vocab.model.food.seafoods.*;
+import vocab.model.food.vegetables.*;
 
 public class SpanishController
 {
 	private List<Fruits> fruits;
+	private List<Food> foodList;
 	private SpanishFrame mainFrame;
 	
 	public SpanishController()
 	{
 		fruits = new ArrayList<Fruits>();
+		foodList = new ArrayList<Food>();
 		buildFruitVocab();
+		buildFoodList();
 		
 		mainFrame = new SpanishFrame(this);
 	}
@@ -37,6 +45,16 @@ public class SpanishController
 		fruits.add(new Peach());
 		fruits.add(new Fruit());
 	}
+	
+	public void buildFoodList()
+	{
+		foodList.add(new BakeryGoods());
+		foodList.add(new Meats());
+		foodList.add(new Pasteries());
+		foodList.add(new Seafoods());
+		foodList.add(new Vegetables());
+		foodList.add(new Fruits());
+	}
 	public List<Fruits> getFruits()
 	{
 		return fruits;
@@ -45,6 +63,7 @@ public class SpanishController
 	{
 		return mainFrame;
 	}
+	
 	public String [] convertFood()
 	{
 		String [] names = new String [fruits.size()];

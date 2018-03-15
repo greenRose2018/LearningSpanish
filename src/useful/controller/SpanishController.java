@@ -59,6 +59,12 @@ public class SpanishController
 	{
 		return fruits;
 	}
+	
+	public List<Food> getFood()
+	{
+		return foodList;
+	}
+	
 	public SpanishFrame getSpanishFrame()
 	{
 		return mainFrame;

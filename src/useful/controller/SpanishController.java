@@ -35,6 +35,7 @@ public class SpanishController
 		fruits.add(new Grapes());
 		fruits.add(new Apple());
 		fruits.add(new Peach());
+		fruits.add(new Fruit());
 	}
 	public List<Fruits> getFruits()
 	{

@@ -139,6 +139,8 @@ public class SpanishPanel extends JPanel
 				int selectedFoodIndex = categoryDropDown.getSelectedIndex();
 				
 				itemDropDown.enable(true);
+				updateFoodInfo(selectedFoodIndex);
+				updateItemImage();
 			}
 		});
 		itemDropDown.addActionListener(new ActionListener()
@@ -147,7 +149,7 @@ public class SpanishPanel extends JPanel
 			{
 				int selectedItemIndex = itemDropDown.getSelectedIndex();
 				updateFruitInfo(selectedItemIndex);
-				updateFruitImage();
+				updateItemImage();
 			}
 		});	
 		verbsBtn.addActionListener(new ActionListener()
@@ -190,34 +192,46 @@ public class SpanishPanel extends JPanel
 		DefaultComboBoxModel foodModel = new DefaultComboBoxModel(appController.convertFood());
 		categoryDropDown.setModel(foodModel);
 		
-		DefaultComboBoxModel itemModel = new DefaultComboBoxModel(appController.convertFood());
+		DefaultComboBoxModel itemModel = new DefaultComboBoxModel(appController.convertItem(appController.getFruits()));
 		itemDropDown.setModel(itemModel);
 	}
 	//Helper Methods
-	private void updateFruitImage()
+	private void updateItemImage()
 	{
 		String path = "/vocab/view/images/";
 		String defaultName = "fruit";
 		String name = itemDropDown.getSelectedItem().toString();
 		String extension = ".png";
 		
-		ImageIcon fruitIcon;
+		ImageIcon itemIcon;
 		
 		try {
-			fruitIcon = new ImageIcon(getClass().getResource(path + name + extension));
+			itemIcon = new ImageIcon(getClass().getResource(path + name + extension));
 		}
 		catch(NullPointerException missingImageFile)
 		{
-			fruitIcon = new ImageIcon(getClass().getResource(path + defaultName + extension));
+			itemIcon = new ImageIcon(getClass().getResource(path + defaultName + extension));
 		}
-		pictureFruitLabel.setIcon(fruitIcon);
+		pictureFruitLabel.setIcon(itemIcon);
 		
 	}
 	
+	private void getItems()
+	{
+		int selectedIndex = categoryDropDown.getSelectedIndex();
+		
+	}
 	private void updateFruitInfo(int index)
 	{
 		englishBox.setText(appController.getFruits().get(index).getEnglishWord());
 		spanishBox.setText(appController.getFruits().get(index).getSpanishWord());
+		descriptionArea.setText(appController.toString());
+	}
+	
+	private void updateFoodInfo(int index)
+	{
+		englishBox.setText(appController.getFood().get(index).englishWord());
+		spanishBox.setText(appController.getFood().get(index).spanishWord());	
 	}
 	
 	private void setupMainMenuPanel()

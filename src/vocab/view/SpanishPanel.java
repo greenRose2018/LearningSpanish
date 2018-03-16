@@ -192,7 +192,7 @@ public class SpanishPanel extends JPanel
 		DefaultComboBoxModel foodModel = new DefaultComboBoxModel(appController.convertFood());
 		categoryDropDown.setModel(foodModel);
 		
-		DefaultComboBoxModel itemModel = new DefaultComboBoxModel(appController.convertItem(appController.getFruits()));
+		DefaultComboBoxModel itemModel = new DefaultComboBoxModel(appController.convertItem());
 		itemDropDown.setModel(itemModel);
 	}
 	//Helper Methods
@@ -216,11 +216,6 @@ public class SpanishPanel extends JPanel
 		
 	}
 	
-	private void getItems()
-	{
-		int selectedIndex = categoryDropDown.getSelectedIndex();
-		
-	}
 	private void updateFruitInfo(int index)
 	{
 		englishBox.setText(appController.getFruits().get(index).getEnglishWord());

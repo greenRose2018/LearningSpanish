@@ -81,7 +81,7 @@ public class SpanishController
 		return names;
 	}
 	
-	public String[] convertItem(List<Fruits> list)
+	public String[] convertItem()
 	{
 		String [] names = new String [list.size()];
 		

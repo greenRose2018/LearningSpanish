@@ -72,12 +72,24 @@ public class SpanishController
 	
 	public String [] convertFood()
 	{
-		String [] names = new String [fruits.size()];
+		String [] names = new String [foodList.size()];
 		
-		for (int index = 0; index < fruits.size(); index++)
+		for (int index = 0; index < foodList.size(); index++)
 		{
-			names[index] = fruits.get(index).getEnglishWord();
+			names[index] = foodList.get(index).englishWord();
 		}
 		return names;
 	}
+	
+	public String[] convertItem(List<Fruits> list)
+	{
+		String [] names = new String [list.size()];
+		
+		for (int index = 0; index < list.size(); index++)
+		{
+			names[index] = list.get(index).englishWord();
+		}
+		return names;
+	}
+	
 }

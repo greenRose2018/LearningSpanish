@@ -83,11 +83,11 @@ public class SpanishController
 	
 	public String[] convertItem()
 	{
-		String [] names = new String [list.size()];
+		String [] names = new String [fruits.size()];
 		
-		for (int index = 0; index < list.size(); index++)
+		for (int index = 0; index < fruits.size(); index++)
 		{
-			names[index] = list.get(index).englishWord();
+			names[index] = fruits.get(index).englishWord();
 		}
 		return names;
 	}

@@ -77,6 +77,19 @@ public class SpanishController
 		vegetableList.add(new Tomato());
 		vegetableList.add(new Vegetables());
 	}
+	
+	public void buildBakedGoods()
+	{
+		bakedList.add(new BakeryGoods());
+		bakedList.add(new Biscuit());
+		bakedList.add(new Bread());
+		bakedList.add(new Cake());
+		bakedList.add(new CinnamonRoll());
+		bakedList.add(new Cookie());
+		bakedList.add(new Pie());
+		bakedList.add(new SweetBread());
+	}
+	
 	public void buildFruitVocab()
 	{
 		fruits.add(new Banana());

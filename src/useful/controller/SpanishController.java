@@ -52,6 +52,18 @@ public class SpanishController
 		meatList.add(new Sheep());
 		meatList.add(new Turkey());
 	}
+	
+	public void buildSeafood()
+	{
+		seafoodList.add(new Bass());
+		seafoodList.add(new Octopus());
+		seafoodList.add(new Oyster());
+		seafoodList.add(new Salmon());
+		seafoodList.add(new Seafoods());
+		seafoodList.add(new Shrimp());
+		seafoodList.add(new Tilapia());
+		seafoodList.add(new Tuna());
+	}
 	public void buildFruitVocab()
 	{
 		fruits.add(new Banana());

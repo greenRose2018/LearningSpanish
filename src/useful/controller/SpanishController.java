@@ -17,12 +17,20 @@ public class SpanishController
 {
 	private List<Fruits> fruits;
 	private List<Food> foodList;
+	private List<BakeryGoods> bakedList;
+	private List<Seafoods> seafoodList;
+	private List<Vegetables> vegetableList;
+	private List<Meats> meatList;
 	private SpanishFrame mainFrame;
 	
 	public SpanishController()
 	{
 		fruits = new ArrayList<Fruits>();
 		foodList = new ArrayList<Food>();
+		bakedList = new ArrayList<BakeryGoods>();
+		seafoodList = new ArrayList<Seafoods>();
+		vegetableList = new ArrayList<Vegetables>();
+		meatList = new ArrayList<Meats>();
 		buildFruitVocab();
 		buildFoodList();
 		
@@ -34,6 +42,16 @@ public class SpanishController
 		
 	}
 	
+	public void buildMeat()
+	{
+		meatList.add(new Fish());
+		meatList.add(new Beef());
+		meatList.add(new Chicken());
+		meatList.add(new Pork());
+		meatList.add(new Meats());
+		meatList.add(new Sheep());
+		meatList.add(new Turkey());
+	}
 	public void buildFruitVocab()
 	{
 		fruits.add(new Banana());

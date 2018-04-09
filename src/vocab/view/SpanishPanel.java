@@ -222,7 +222,30 @@ public class SpanishPanel extends JPanel
 		spanishBox.setText(appController.getFruits().get(index).getSpanishWord());
 		descriptionArea.setText(appController.toString());
 	}
-	
+	private void updateBakedInfo(int index)
+	{
+		englishBox.setText(appController.getBakedGoods().get(index).getEnglishWord());
+		spanishBox.setText(appController.getBakedGoods().get(index).getSpanishWord());
+		descriptionArea.setText(appController.toString());
+	}
+	private void updateSeafoodInfo(int index)
+	{
+		englishBox.setText(appController.getSeafoods().get(index).getEnglishWord());
+		spanishBox.setText(appController.getSeafoods().get(index).getSpanishWord());
+		descriptionArea.setText(appController.toString());
+	}
+	private void updateMeatInfo(int index)
+	{
+		englishBox.setText(appController.getMeat().get(index).getEnglishWord());
+		spanishBox.setText(appController.getMeat().get(index).getSpanishWord());
+		descriptionArea.setText(appController.toString());
+	}
+	private void updateVegetableInfo(int index)
+	{
+		englishBox.setText(appController.getVeggies().get(index).getEnglishWord());
+		spanishBox.setText(appController.getVeggies().get(index).getSpanishWord());
+		descriptionArea.setText(appController.toString());
+	}
 	private void updateFoodInfo(int index)
 	{
 		englishBox.setText(appController.getFood().get(index).englishWord());

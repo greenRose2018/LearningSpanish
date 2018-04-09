@@ -33,6 +33,10 @@ public class SpanishController
 		meatList = new ArrayList<Meats>();
 		buildFruitVocab();
 		buildFoodList();
+		buildSeafood();
+		buildVeggies();
+		buildMeat();
+		buildBakedGoods();
 		
 		mainFrame = new SpanishFrame(this);
 	}
@@ -119,6 +123,25 @@ public class SpanishController
 		return foodList;
 	}
 	
+	public List<Meats> getMeat()
+	{
+		return meatList;
+	}
+	
+	public List<Vegetables> getVeggies()
+	{
+		return vegetableList;
+	}
+	
+	public List<BakeryGoods> getBakedGoods()
+	{
+		return bakedList;
+	}
+	
+	public List<Seafoods> getSeafoods()
+	{
+		return seafoodList;
+	}
 	public SpanishFrame getSpanishFrame()
 	{
 		return mainFrame;

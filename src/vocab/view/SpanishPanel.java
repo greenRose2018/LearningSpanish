@@ -147,9 +147,34 @@ public class SpanishPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent selection)
 			{
+				int selected = categoryDropDown.getSelectedIndex();
 				int selectedItemIndex = itemDropDown.getSelectedIndex();
-				updateFruitInfo(selectedItemIndex);
-				updateItemImage();
+				if(selected == 0)
+				{
+					updateBakedInfo(selectedItemIndex);
+				}
+				else if(selected == 1)
+				{
+					updateMeatInfo(selectedItemIndex);
+				}
+				else if(selected == 2)
+				{
+					updateSeafoodInfo(selectedItemIndex);
+				}
+				else if(selected == 3)
+				{
+					updateVegetableInfo(selectedItemIndex);
+				}
+				else if(selected == 4)
+				{
+					updateFruitInfo(selectedItemIndex);
+					updateItemImage();
+				}
+				else
+				{
+					
+				}
+				
 			}
 		});	
 		verbsBtn.addActionListener(new ActionListener()

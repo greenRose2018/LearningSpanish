@@ -10,7 +10,6 @@ import vocab.model.food.*;
 import vocab.model.food.fruits.*;
 import vocab.model.food.bakerygoods.*;
 import vocab.model.food.meats.*;
-import vocab.model.food.pastries.*;
 import vocab.model.food.seafoods.*;
 import vocab.model.food.vegetables.*;
 
@@ -50,7 +49,6 @@ public class SpanishController
 	{
 		foodList.add(new BakeryGoods());
 		foodList.add(new Meats());
-		foodList.add(new Pasteries());
 		foodList.add(new Seafoods());
 		foodList.add(new Vegetables());
 		foodList.add(new Fruits());

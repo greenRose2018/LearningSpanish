@@ -169,4 +169,47 @@ public class SpanishController
 		return names;
 	}
 	
+	public String[] convertSeafood()
+	{
+		String [] names = new String [seafoodList.size()];
+		
+		for (int index = 0; index < seafoodList.size(); index++)
+		{
+			names[index] = seafoodList.get(index).englishWord();
+		}
+		return names;
+	}
+	
+	public String[] convertVeggies()
+	{
+		String [] names = new String [vegetableList.size()];
+		
+		for (int index = 0; index < vegetableList.size(); index++)
+		{
+			names[index] = vegetableList.get(index).englishWord();
+		}
+		return names;
+	}
+	public String[] convertBakedGoods()
+	{
+		String [] names = new String [bakedList.size()];
+		
+		for (int index = 0; index < bakedList.size(); index++)
+		{
+			names[index] = bakedList.get(index).englishWord();
+		}
+		return names;
+	}
+	public String[] convertMeats()
+	{
+		String [] names = new String [meatList.size()];
+		
+		for (int index = 0; index < meatList.size(); index++)
+		{
+			names[index] = meatList.get(index).englishWord();
+		}
+		return names;
+	}
+	
+	
 }

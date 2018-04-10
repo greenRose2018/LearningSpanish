@@ -31,7 +31,7 @@ public class BakeryGoods extends FoodVocab implements Food
 	
 	public String spanishWord()
 	{
-		return "Prooductos de panadería";
+		return "Productos de panadería";
 	}
 	
 	public String categoryFood()

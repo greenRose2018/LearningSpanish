@@ -7,11 +7,11 @@ public class BakeryGoods extends FoodVocab implements Food
 {
 	public BakeryGoods()
 	{
-		super("Bakery Goods", "Fruita","Bakery Goods");
+		super("Bakery Goods", "Productos de panadería","Bakery Goods");
 	}
 	public BakeryGoods(String english)
 	{
-		super(english,"Fruta","Bakery Goods");
+		super(english,"Productos de panadería","Bakery Goods");
 	}
 	
 	public BakeryGoods(String english, String spanish)
@@ -31,7 +31,7 @@ public class BakeryGoods extends FoodVocab implements Food
 	
 	public String spanishWord()
 	{
-		return "Fruita";
+		return "Prooductos de panadería";
 	}
 	
 	public String categoryFood()

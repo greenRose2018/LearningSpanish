@@ -4,21 +4,21 @@ public class Biscuit extends BakeryGoods
 {
 	public Biscuit()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Biscuit", "El panecillo","Bakery Goods");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Biscuit";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "El panecillo";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Bakery Goods";
 	}
 }

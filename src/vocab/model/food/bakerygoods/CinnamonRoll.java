@@ -4,21 +4,21 @@ public class CinnamonRoll extends BakeryGoods
 {
 	public CinnamonRoll()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Cinnamon Roll", "El rollo de canela","Bakery Goods");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Cinnamon Roll";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "El rollo de canela";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Bakery Goods";
 	}
 }

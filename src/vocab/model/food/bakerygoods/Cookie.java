@@ -4,21 +4,21 @@ public class Cookie extends BakeryGoods
 {
 	public Cookie()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Cookie", "La galleta","Bakery Goods");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Cookie";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "La galleta";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Bakery Goods";
 	}
 }

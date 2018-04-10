@@ -4,21 +4,21 @@ public class Bread extends BakeryGoods
 {
 	public Bread()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Bread", "El pan","Bakery Goods");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Bread";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "El pan";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Bakery Goods";
 	}
 }

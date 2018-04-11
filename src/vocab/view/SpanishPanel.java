@@ -167,9 +167,9 @@ public class SpanishPanel extends JPanel
 				}
 				else if(selected == 4)
 				{
-					updateFruitInfo(selectedItemIndex);
-					updateItemImage();
+					updateFruitInfo(selectedItemIndex);	
 				}
+				updateItemImage();
 			}
 		});	
 		verbsBtn.addActionListener(new ActionListener()

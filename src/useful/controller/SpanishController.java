@@ -210,30 +210,4 @@ public class SpanishController
 		}
 		return names;
 	}	
-	public String[] convert()
-	{
-		int selected = 0;
-		
-		if(selected == 0)
-		{
-			return convertBakedGoods();
-		}
-		else if(selected == 1)
-		{
-			return convertMeats();
-		}
-		else if(selected == 2)
-		{
-			return convertSeafood();
-		}
-		else if(selected == 3)
-		{
-			return convertVeggies();
-		}
-		else if(selected == 4)
-		{
-			return convertItem();
-		}
-		return null;
-	}
 }

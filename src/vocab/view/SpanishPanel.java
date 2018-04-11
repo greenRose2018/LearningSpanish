@@ -216,31 +216,6 @@ public class SpanishPanel extends JPanel
 		itemDropDown.setModel(itemModel);
 	}
 	
-//	private void convert()
-//	{
-//		int selected = categoryDropDown.getSelectedIndex();
-//		
-//		if(selected == 0)
-//		{
-//			appController.convertBakedGoods();
-//		}
-//		else if(selected == 1)
-//		{
-//			appController.convertMeats();
-//		}
-//		else if(selected == 2)
-//		{
-//			appController.convertSeafood();
-//		}
-//		else if(selected == 3)
-//		{
-//			appController.convertVeggies();
-//		}
-//		else if(selected == 4)
-//		{
-//			appController.convertItem();
-//		}
-//	}
 	//Helper Methods
 	private void updateItemImage()
 	{

@@ -136,7 +136,7 @@ public class SpanishPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent selection)
 			{
-				int selectedFoodIndex = categoryDropDown.getSelectedIndex();
+				int selected = categoryDropDown.getSelectedIndex();
 				
 				itemDropDown.enable(true);
 				updateFoodInfo(selectedFoodIndex);
@@ -220,7 +220,7 @@ public class SpanishPanel extends JPanel
 	private void updateItemImage()
 	{
 		String path = "/vocab/view/images/";
-		String defaultName = "fruit";
+		String defaultName = "default";
 		String name = itemDropDown.getSelectedItem().toString();
 		String extension = ".png";
 		

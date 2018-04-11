@@ -139,7 +139,34 @@ public class SpanishPanel extends JPanel
 				int selected = categoryDropDown.getSelectedIndex();
 				
 				itemDropDown.enable(true);
-				updateFoodInfo(selectedFoodIndex);
+				
+				if(selected == 0)
+				{
+					DefaultComboBoxModel baked = new DefaultComboBoxModel(appController.convertBakedGoods());
+					itemDropDown.setModel(baked);
+				}
+				else if(selected == 1)
+				{
+					DefaultComboBoxModel meat = new DefaultComboBoxModel(appController.convertMeats());
+					itemDropDown.setModel(meat);
+				}
+				else if(selected == 2)
+				{
+					DefaultComboBoxModel seafood = new DefaultComboBoxModel(appController.convertSeafood());
+					itemDropDown.setModel(seafood);
+				}
+				else if(selected == 3)
+				{
+					DefaultComboBoxModel veggies = new DefaultComboBoxModel(appController.convertVeggies());
+					itemDropDown.setModel(veggies);
+				}
+				else if(selected == 4)
+				{
+					DefaultComboBoxModel fruit = new DefaultComboBoxModel(appController.convertItem());
+					itemDropDown.setModel(fruit);
+				}
+				
+				updateFoodInfo(selected);
 				updateItemImage();
 			}
 		});

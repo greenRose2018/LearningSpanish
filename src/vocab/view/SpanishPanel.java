@@ -140,32 +140,7 @@ public class SpanishPanel extends JPanel
 				
 				itemDropDown.enable(true);
 				
-				if(selected == 0)
-				{
-					DefaultComboBoxModel baked = new DefaultComboBoxModel(appController.convertBakedGoods());
-					itemDropDown.setModel(baked);
-				}
-				else if(selected == 1)
-				{
-					DefaultComboBoxModel meat = new DefaultComboBoxModel(appController.convertMeats());
-					itemDropDown.setModel(meat);
-				}
-				else if(selected == 2)
-				{
-					DefaultComboBoxModel seafood = new DefaultComboBoxModel(appController.convertSeafood());
-					itemDropDown.setModel(seafood);
-				}
-				else if(selected == 3)
-				{
-					DefaultComboBoxModel veggies = new DefaultComboBoxModel(appController.convertVeggies());
-					itemDropDown.setModel(veggies);
-				}
-				else if(selected == 4)
-				{
-					DefaultComboBoxModel fruit = new DefaultComboBoxModel(appController.convertItem());
-					itemDropDown.setModel(fruit);
-				}
-				
+				updateDropDown(selected);				
 				updateFoodInfo(selected);
 				updateItemImage();
 			}
@@ -174,28 +149,7 @@ public class SpanishPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent selection)
 			{
-				int selected = categoryDropDown.getSelectedIndex();
-				int selectedItemIndex = itemDropDown.getSelectedIndex();
-				if(selected == 0)
-				{
-					updateBakedInfo(selectedItemIndex);
-				}
-				else if(selected == 1)
-				{
-					updateMeatInfo(selectedItemIndex);
-				}
-				else if(selected == 2)
-				{
-					updateSeafoodInfo(selectedItemIndex);
-				}
-				else if(selected == 3)
-				{
-					updateVegetableInfo(selectedItemIndex);
-				}
-				else if(selected == 4)
-				{
-					updateFruitInfo(selectedItemIndex);	
-				}
+				itemDropDown();
 				updateItemImage();
 			}
 		});	
@@ -234,6 +188,32 @@ public class SpanishPanel extends JPanel
 		});
 	}
 	
+	private void itemDropDown() 
+	{
+		int selected = categoryDropDown.getSelectedIndex();
+		int selectedItemIndex = itemDropDown.getSelectedIndex();
+		if(selected == 0)
+		{
+			updateBakedInfo(selectedItemIndex);
+		}
+		else if(selected == 1)
+		{
+			updateMeatInfo(selectedItemIndex);
+		}
+		else if(selected == 2)
+		{
+			updateSeafoodInfo(selectedItemIndex);
+		}
+		else if(selected == 3)
+		{
+			updateVegetableInfo(selectedItemIndex);
+		}
+		else if(selected == 4)
+		{
+			updateFruitInfo(selectedItemIndex);	
+		}
+	}
+	
 	private void setupComboBox()
 	{
 		DefaultComboBoxModel foodModel = new DefaultComboBoxModel(appController.convertFood());
@@ -244,6 +224,34 @@ public class SpanishPanel extends JPanel
 	}
 	
 	//Helper Methods
+	private void updateDropDown(int selected)
+	{
+		if(selected == 0)
+		{
+			DefaultComboBoxModel baked = new DefaultComboBoxModel(appController.convertBakedGoods());
+			itemDropDown.setModel(baked);
+		}
+		else if(selected == 1)
+		{
+			DefaultComboBoxModel meat = new DefaultComboBoxModel(appController.convertMeats());
+			itemDropDown.setModel(meat);
+		}
+		else if(selected == 2)
+		{
+			DefaultComboBoxModel seafood = new DefaultComboBoxModel(appController.convertSeafood());
+			itemDropDown.setModel(seafood);
+		}
+		else if(selected == 3)
+		{
+			DefaultComboBoxModel veggies = new DefaultComboBoxModel(appController.convertVeggies());
+			itemDropDown.setModel(veggies);
+		}
+		else if(selected == 4)
+		{
+			DefaultComboBoxModel fruit = new DefaultComboBoxModel(appController.convertItem());
+			itemDropDown.setModel(fruit);
+		}
+	}
 	private void updateItemImage()
 	{
 		String path = "/vocab/view/images/";

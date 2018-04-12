@@ -4,21 +4,21 @@ public class Turkey extends Meats
 {
 	public Turkey()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Turkey", "Carnde de pavo","Meat");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Turkey";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "Carnde de pavo";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Meat";
 	}
 }

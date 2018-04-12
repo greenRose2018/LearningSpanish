@@ -4,21 +4,21 @@ public class Chicken extends Meats
 {
 	public Chicken()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Chicken", "Carne de pollo","Meat");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Chicken";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "Carne de pollo";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Meat";
 	}
 }

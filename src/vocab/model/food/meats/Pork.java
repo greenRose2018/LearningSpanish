@@ -4,21 +4,21 @@ public class Pork extends Meats
 {
 	public Pork()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Pork", "El cerdo","Meat");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Pork";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "El cerdo";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Meat";
 	}
 }

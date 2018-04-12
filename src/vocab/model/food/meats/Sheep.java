@@ -4,21 +4,21 @@ public class Sheep extends Meats
 {
 	public Sheep()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Sheep", "Carne de oveja","Meat");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Sheep";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "Carne de oveja";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Meat";
 	}
 }

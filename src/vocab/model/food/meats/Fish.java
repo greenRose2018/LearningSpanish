@@ -4,21 +4,21 @@ public class Fish extends Meats
 {
 	public Fish()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Fish", "Carne de pescado","Meat");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Fish";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "Carne de pescado";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Meat";
 	}
 }

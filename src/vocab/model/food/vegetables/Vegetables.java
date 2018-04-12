@@ -7,11 +7,11 @@ public class Vegetables extends FoodVocab implements Food
 {
 	public Vegetables()
 	{
-		super("Vegetables", "Fruita","Vegetable");
+		super("Vegetable", "El vegetal","Vegetable");
 	}
 	public Vegetables(String english)
 	{
-		super(english,"Fruta","Vegetable");
+		super(english,"El vegetal","Vegetable");
 	}
 	
 	public Vegetables(String english, String spanish)
@@ -31,7 +31,7 @@ public class Vegetables extends FoodVocab implements Food
 	
 	public String spanishWord()
 	{
-		return "Fruita";
+		return "El vegetal";
 	}
 	
 	public String categoryFood()

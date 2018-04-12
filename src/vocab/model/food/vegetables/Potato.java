@@ -4,21 +4,21 @@ public class Potato extends Vegetables
 {
 	public Potato()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Potato", "La papa","Vegetable");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Potato";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "La papa";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Vegetable";
 	}
 }

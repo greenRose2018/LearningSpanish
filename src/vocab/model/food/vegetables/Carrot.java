@@ -4,21 +4,21 @@ public class Carrot extends Vegetables
 {
 	public Carrot()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Carrot", "La zanahoria","Vegetable");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Carrot";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "La zanahoria";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Vegetable";
 	}
 }

@@ -4,21 +4,21 @@ public class Cauliflower extends Vegetables
 {
 	public Cauliflower()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Cauliflower", "La coliflor","Vegetable");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Cauliflower";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "La coliflor";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Vegetable";
 	}
 }

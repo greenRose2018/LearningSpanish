@@ -4,21 +4,21 @@ public class Cabbage extends Vegetables
 {
 	public Cabbage()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Cabbage", "El repollo","Vegetable");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Cabbage";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "El repollo";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Vegetable";
 	}
 }

@@ -4,21 +4,21 @@ public class Tomato extends Vegetables
 {
 	public Tomato()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Tomato", "El tomate","Vegetable");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Tomato";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "El tomate";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Vegetable";
 	}
 }

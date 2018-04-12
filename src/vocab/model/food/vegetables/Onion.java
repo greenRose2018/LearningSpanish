@@ -4,21 +4,21 @@ public class Onion extends Vegetables
 {
 	public Onion()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Onion", "La cebolla","Vegetable");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Onion";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "La cebolla";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Vegetable";
 	}
 }

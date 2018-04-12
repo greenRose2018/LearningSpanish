@@ -4,21 +4,21 @@ public class Cucumber extends Vegetables
 {
 	public Cucumber()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Cucumber", "El pepino","Vegetable");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Cucumber";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "El pepino";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Vegetable";
 	}
 }

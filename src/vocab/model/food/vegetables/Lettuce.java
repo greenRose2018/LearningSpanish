@@ -4,21 +4,21 @@ public class Lettuce extends Vegetables
 {
 	public Lettuce()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Lettuce", "La lechuga","Vegetable");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Lettuce";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "La lechuga";
 	}
 	
 	public String categoryFood()
 	{
-		return "Seafood";
+		return "Vegetable";
 	}
 }

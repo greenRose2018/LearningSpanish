@@ -2,6 +2,8 @@ package vocab.view;
 
 import javax.swing.JPanel;
 import useful.controller.SpanishController;
+import vocab.model.FoodVocab;
+
 import java.awt.event.*;
 import java.awt.*;
 import javax.swing.*;
@@ -276,31 +278,31 @@ public class SpanishPanel extends JPanel
 	{
 		englishBox.setText(appController.getFruits().get(index).getEnglishWord());
 		spanishBox.setText(appController.getFruits().get(index).getSpanishWord());
-		descriptionArea.setText(appController.toString());
+		descriptionArea.setText(appController.getFruits().get(index).getDescription());
 	}
 	private void updateBakedInfo(int index)
 	{
 		englishBox.setText(appController.getBakedGoods().get(index).getEnglishWord());
 		spanishBox.setText(appController.getBakedGoods().get(index).getSpanishWord());
-		descriptionArea.setText(appController.toString());
+		descriptionArea.setText(appController.getBakedGoods().get(index).getDescription());
 	}
 	private void updateSeafoodInfo(int index)
 	{
 		englishBox.setText(appController.getSeafoods().get(index).getEnglishWord());
 		spanishBox.setText(appController.getSeafoods().get(index).getSpanishWord());
-		descriptionArea.setText(appController.toString());
+		descriptionArea.setText(appController.getSeafoods().get(index).getDescription());
 	}
 	private void updateMeatInfo(int index)
 	{
 		englishBox.setText(appController.getMeat().get(index).getEnglishWord());
 		spanishBox.setText(appController.getMeat().get(index).getSpanishWord());
-		descriptionArea.setText(appController.toString());
+		descriptionArea.setText(appController.getMeat().get(index).getDescription());
 	}
 	private void updateVegetableInfo(int index)
 	{
 		englishBox.setText(appController.getVeggies().get(index).getEnglishWord());
 		spanishBox.setText(appController.getVeggies().get(index).getSpanishWord());
-		descriptionArea.setText(appController.toString());
+		descriptionArea.setText(appController.getVeggies().get(index).getDescription());
 	}
 	private void updateFoodInfo(int index)
 	{

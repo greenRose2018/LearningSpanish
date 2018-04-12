@@ -38,4 +38,5 @@ public class Seafoods extends FoodVocab implements Food
 	{
 		return "Seafood";
 	}
+	
 }

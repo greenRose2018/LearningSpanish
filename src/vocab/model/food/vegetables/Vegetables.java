@@ -38,4 +38,5 @@ public class Vegetables extends FoodVocab implements Food
 	{
 		return "Vegetable";
 	}
+	
 }

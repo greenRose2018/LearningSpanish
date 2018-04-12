@@ -15,8 +15,6 @@ public class FoodVocab
 		this.typeOfFood = typeOfFood;
 	}
 	
-	
-
 	public String[] getFoodType()
 	{
 		String [] types = null;

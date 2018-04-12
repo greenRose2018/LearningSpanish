@@ -5,7 +5,6 @@ import vocab.view.SpanishFrame;
 import java.util.ArrayList;
 import java.util.List;
 
-import vocab.model.*;
 import vocab.model.food.*;
 import vocab.model.food.fruits.*;
 import vocab.model.food.bakerygoods.*;
@@ -164,7 +163,7 @@ public class SpanishController
 		
 		for (int index = 0; index < fruits.size(); index++)
 		{
-			names[index] = fruits.get(index).englishWord();
+			names[index] = fruits.get(index).getEnglishWord();
 		}
 		return names;
 	}
@@ -175,7 +174,7 @@ public class SpanishController
 		
 		for (int index = 0; index < seafoodList.size(); index++)
 		{
-			names[index] = seafoodList.get(index).englishWord();
+			names[index] = seafoodList.get(index).getEnglishWord();
 		}
 		return names;
 	}
@@ -186,7 +185,7 @@ public class SpanishController
 		
 		for (int index = 0; index < vegetableList.size(); index++)
 		{
-			names[index] = vegetableList.get(index).englishWord();
+			names[index] = vegetableList.get(index).getEnglishWord();
 		}
 		return names;
 	}
@@ -196,7 +195,7 @@ public class SpanishController
 		
 		for (int index = 0; index < bakedList.size(); index++)
 		{
-			names[index] = bakedList.get(index).englishWord();
+			names[index] = bakedList.get(index).getEnglishWord();
 		}
 		return names;
 	}
@@ -206,7 +205,7 @@ public class SpanishController
 		
 		for (int index = 0; index < meatList.size(); index++)
 		{
-			names[index] = meatList.get(index).englishWord();
+			names[index] = meatList.get(index).getEnglishWord();
 		}
 		return names;
 	}	

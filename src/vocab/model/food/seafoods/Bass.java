@@ -14,7 +14,7 @@ public class Bass extends Seafoods
 	
 	public String spanishWord()
 	{
-		return "el rÃ³balo";
+		return "el róbalo";
 	}
 	
 	public String categoryFood()

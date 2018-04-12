@@ -4,17 +4,17 @@ public class Salmon extends Seafoods
 {
 	public Salmon()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Salmon", "El salmón","Seafood");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Salmon";
 	}
 	
 	public String spanishWord()
 	{
-		return "el rÃ³balo";
+		return "El salmón";
 	}
 	
 	public String categoryFood()

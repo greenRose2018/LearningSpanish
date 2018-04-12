@@ -7,11 +7,11 @@ public class Seafoods extends FoodVocab implements Food
 {
 	public Seafoods()
 	{
-		super("Seafood", "Fruita","Seafood");
+		super("Seafood", "Los mariscos","Seafood");
 	}
 	public Seafoods(String english)
 	{
-		super(english,"Fruta","Seafood");
+		super(english,"Los mariscos","Seafood");
 	}
 	
 	public Seafoods(String english, String spanish)
@@ -31,7 +31,7 @@ public class Seafoods extends FoodVocab implements Food
 	
 	public String spanishWord()
 	{
-		return "Fruita";
+		return "Los mariscos";
 	}
 	
 	public String categoryFood()

@@ -4,17 +4,17 @@ public class Octopus extends Seafoods
 {
 	public Octopus()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Octopus", "El pulpo","Seafood");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Octopus";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "El pulpo";
 	}
 	
 	public String categoryFood()

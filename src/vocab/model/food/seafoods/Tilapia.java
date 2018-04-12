@@ -4,17 +4,17 @@ public class Tilapia extends Seafoods
 {
 	public Tilapia()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Tilapia", "La tilapia","Seafood");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Tilapia";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "La tilapia";
 	}
 	
 	public String categoryFood()

@@ -4,17 +4,17 @@ public class Oyster extends Seafoods
 {
 	public Oyster()
 	{
-		super("Bass", "Manzana","Seafood");
+		super("Oyster", "La ostra","Seafood");
 	}
 	
 	public String englishWord()
 	{
-		return "Bass";
+		return "Oyster";
 	}
 	
 	public String spanishWord()
 	{
-		return "el róbalo";
+		return "La ostra";
 	}
 	
 	public String categoryFood()

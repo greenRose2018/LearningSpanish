@@ -2,7 +2,6 @@ package vocab.view;
 
 import javax.swing.JPanel;
 import useful.controller.SpanishController;
-import vocab.model.FoodVocab;
 
 import java.awt.event.*;
 import java.awt.*;

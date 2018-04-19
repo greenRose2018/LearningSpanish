@@ -4,7 +4,7 @@ public class Tuna extends Seafoods
 {
 	public Tuna()
 	{
-		super("Tuna", "El atún","Seafood");
+		super("Tuna", "El atÃºn","Seafood");
 	}
 	
 	public String englishWord()
@@ -14,7 +14,7 @@ public class Tuna extends Seafoods
 	
 	public String spanishWord()
 	{
-		return "El atún";
+		return "El atÃºn";
 	}
 	
 	public String categoryFood()

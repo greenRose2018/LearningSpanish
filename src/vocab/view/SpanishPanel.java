@@ -18,8 +18,6 @@ public class SpanishPanel extends JPanel
 	//main menu btns
 	private JButton foodBtn;
 	
-	//btns inside of the foodPanel
-	
 	//back btns
 	private JButton backBtnFoods;
 	
@@ -34,6 +32,9 @@ public class SpanishPanel extends JPanel
 	private JLabel englishLabel;
 	private JLabel spanishLabel;
 	private JLabel pictureFruitLabel;
+	private JLabel category;
+	private JLabel item;
+	private JLabel infoMainMenu;
 	private JTextField englishBox;
 	private JTextField spanishBox;
 	
@@ -54,6 +55,9 @@ public class SpanishPanel extends JPanel
 		
 		englishLabel = new JLabel("English:");
 		spanishLabel = new JLabel("Spanish:");
+		category = new JLabel("Choose a Category:");
+		item = new JLabel("Choose an Item:");
+		infoMainMenu = new JLabel("Click the button to start Learning Food Vocabulary!");
 		pictureFruitLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")),JLabel.CENTER);
 		englishBox = new JTextField();
 		spanishBox = new JTextField();
@@ -88,6 +92,10 @@ public class SpanishPanel extends JPanel
 
 	private void setupLayout()
 	{
+		category.setBounds(92, 44, 122, 20);
+		item.setBounds(112, 76, 116, 20);
+		infoMainMenu.setBounds(90, 152, 331, 30);
+		
 		titleForMenu.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForMenu.setLocation(208, 6);
 		titleForMenu.setSize(83, 37);
@@ -95,7 +103,7 @@ public class SpanishPanel extends JPanel
 		titleForFood.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForFood.setBounds(195, 11, 110, 30);
 		
-		foodBtn.setBounds(340, 124, 83, 25);
+		foodBtn.setBounds(181, 194, 149, 90);
 		
 		backBtnFoods.setBounds(413, 404, 81, 29);
 		descriptionArea.setBounds(240, 214, 254, 178);
@@ -104,7 +112,7 @@ public class SpanishPanel extends JPanel
 		itemDropDown.setBounds(240, 72, 254, 30);
 		englishLabel.setBounds(240, 114, 65, 30);
 		spanishLabel.setBounds(240, 155, 65, 30);
-		pictureFruitLabel.setBounds(6, 40, 222, 352);
+		pictureFruitLabel.setBounds(6, 110, 222, 282);
 		englishBox.setBounds(327, 119, 167, 20);
 		spanishBox.setBounds(327, 160, 167, 20);
 		descriptionArea.setEditable(false);
@@ -279,6 +287,7 @@ public class SpanishPanel extends JPanel
 		mainPanel.setLayout(null);
 		mainPanel.add(foodBtn);
 		mainPanel.add(titleForMenu);
+		mainPanel.add(infoMainMenu);
 	}
 	
 	private void setupFoodsPanel()
@@ -296,6 +305,8 @@ public class SpanishPanel extends JPanel
 		foodPanel.add(spanishBox);
 		foodPanel.add(pictureFruitLabel);
 		foodPanel.add(backBtnFoods);
+		foodPanel.add(category);
+		foodPanel.add(item);
 		
 	}
 }

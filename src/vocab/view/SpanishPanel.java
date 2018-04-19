@@ -120,6 +120,7 @@ public class SpanishPanel extends JPanel
 	
 	private void setupListeners()
 	{
+		//startComplexity
 		categoryDropDown.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent selection)
@@ -133,6 +134,7 @@ public class SpanishPanel extends JPanel
 				updateItemImage();
 			}
 		});
+		//endComplexity
 		itemDropDown.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent selection)
@@ -160,7 +162,7 @@ public class SpanishPanel extends JPanel
 			}
 		});
 	}
-	
+	//startComplexity
 	private void itemDropDown() 
 	{
 		int selected = categoryDropDown.getSelectedIndex();
@@ -186,7 +188,7 @@ public class SpanishPanel extends JPanel
 			updateFruitInfo(selectedItemIndex);	
 		}
 	}
-	
+	//endComplexity
 	private void setupComboBox()
 	{
 		DefaultComboBoxModel foodModel = new DefaultComboBoxModel(appController.convertFood());
@@ -197,6 +199,7 @@ public class SpanishPanel extends JPanel
 	}
 	
 	//Helper Methods
+	//startComplexity
 	private void updateDropDown(int selected)
 	{
 		if(selected == 0)
@@ -225,6 +228,8 @@ public class SpanishPanel extends JPanel
 			itemDropDown.setModel(fruit);
 		}
 	}
+	//endComplexity
+	
 	private void updateItemImage()
 	{
 		String path = "/vocab/view/images/";

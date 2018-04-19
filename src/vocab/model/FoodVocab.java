@@ -15,7 +15,6 @@ public class FoodVocab
 		this.typeOfFood = typeOfFood;
 	}
 	
-	
 	/**
 	 * @return the spanishWord
 	 */
@@ -44,7 +43,7 @@ public class FoodVocab
 	
 	public String getDescription()
 	{
-		String info = "This is a " + englishWord + " a type of " + "\n"+ typeOfFood +"." ;
+		String info = "This is a " + englishWord + " a type of " + "\n" + typeOfFood +"." ;
 		return info;
 	}
 	

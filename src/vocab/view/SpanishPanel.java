@@ -14,21 +14,17 @@ public class SpanishPanel extends JPanel
 	//Labels for panels
 	private JLabel titleForFood;
 	private JLabel titleForMenu;
-	private JLabel titleForVerbs;
 	
 	//main menu btns
 	private JButton foodBtn;
-	private JButton verbsBtn;
 	
 	//btns inside of the foodPanel
 	
 	//back btns
-	private JButton backBtnVerbs;
 	private JButton backBtnFoods;
 	
 	//main panels
 	private JPanel foodPanel;
-	private JPanel verbsPanel;
 	private JPanel mainPanel;
 	
 	//Food Panel
@@ -50,7 +46,6 @@ public class SpanishPanel extends JPanel
 		//main panels
 		mainPanel = new JPanel();
 		foodPanel = new JPanel();
-		verbsPanel = new JPanel();
 		
 		//Food panel
 		descriptionArea = new JTextArea(5,10);
@@ -65,12 +60,9 @@ public class SpanishPanel extends JPanel
 		
 		//titles for panels
 		titleForMenu = new JLabel("Main Menu");
-		titleForVerbs = new JLabel("Verbs In Spanish");
 		titleForFood = new JLabel("Foods in Spanish");
 		
 		foodBtn = new JButton("Foods");	
-		verbsBtn = new JButton("Verbs");
-		backBtnVerbs = new JButton("Back");
 		backBtnFoods = new JButton("Back");
 		
 		setupComboBox();
@@ -85,7 +77,6 @@ public class SpanishPanel extends JPanel
 		setLayout(new CardLayout(0, 0));		
 		mainPanel.setLayout(null);
 		foodPanel.setLayout(null);
-		verbsPanel.setLayout(null);
 		
 		//mainPanel
 		setupMainMenuPanel();
@@ -93,11 +84,6 @@ public class SpanishPanel extends JPanel
 		//FoodPanel
 		setupFoodsPanel();
 		
-		//VerbsPanel 
-		setupVerbsPanel();
-		
-		
-
 	}
 
 	private void setupLayout()
@@ -106,17 +92,10 @@ public class SpanishPanel extends JPanel
 		titleForMenu.setLocation(208, 6);
 		titleForMenu.setSize(83, 37);
 		
-		titleForVerbs.setLocation(155, 13);
-		titleForVerbs.setSize(140, 40);
-		titleForVerbs.setHorizontalAlignment(SwingConstants.CENTER);
-		
 		titleForFood.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForFood.setBounds(195, 11, 110, 30);
 		
 		foodBtn.setBounds(340, 124, 83, 25);
-		verbsBtn.setBounds(89, 124, 79, 25);
-		backBtnVerbs.setLocation(18, 380);
-		backBtnVerbs.setSize(87, 33);
 		
 		backBtnFoods.setBounds(413, 404, 81, 29);
 		descriptionArea.setBounds(240, 214, 254, 178);
@@ -154,14 +133,7 @@ public class SpanishPanel extends JPanel
 				updateItemImage();
 			}
 		});	
-		verbsBtn.addActionListener(new ActionListener()
-		{
-			public void actionPerformed(ActionEvent click)
-			{
-				mainPanel.setVisible(false);
-				verbsPanel.setVisible(true);
-			}
-		});
+		
 		foodBtn.addActionListener(new ActionListener()
 				{
 			public void actionPerformed(ActionEvent click)
@@ -170,15 +142,7 @@ public class SpanishPanel extends JPanel
 				foodPanel.setVisible(true);
 			}
 				});
-		backBtnVerbs.addActionListener(new ActionListener()
-		{
-			public void actionPerformed(ActionEvent click)
-			{
-				mainPanel.setVisible(true);
-				verbsPanel.setVisible(false);
-			}
-			
-		});
+		
 		backBtnFoods.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent click)
@@ -313,17 +277,8 @@ public class SpanishPanel extends JPanel
 	{
 		this.add(mainPanel, "name_364289695107993");
 		mainPanel.setLayout(null);
-		mainPanel.add(verbsBtn);
 		mainPanel.add(foodBtn);
 		mainPanel.add(titleForMenu);
-	}
-	
-	private void setupVerbsPanel()
-	{
-		this.add(verbsPanel, "name_364289744103657");
-		verbsPanel.setVisible(false);
-		verbsPanel.add(titleForVerbs);
-		verbsPanel.add(backBtnVerbs);
 	}
 	
 	private void setupFoodsPanel()

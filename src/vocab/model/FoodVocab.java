@@ -77,7 +77,7 @@ public class FoodVocab
 	
 	public String getDescription()
 	{
-		String info = "This is a " + englishWord + " a type of " + typeOfFood +"." ;
+		String info = "This is a " + englishWord + " a type of " + "\n"+ typeOfFood +"." ;
 		return info;
 	}
 	

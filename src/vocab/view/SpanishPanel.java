@@ -118,6 +118,8 @@ public class SpanishPanel extends JPanel
 		//FoodPanel
 		setupFoodsPanel();
 		
+		//TechPanel
+		setupTechPanel();
 	}
 
 	private void setupLayout()
@@ -346,6 +348,7 @@ public class SpanishPanel extends JPanel
 		this.add(mainPanel, "name_364289695107993");
 		mainPanel.setLayout(null);
 		mainPanel.add(foodBtn);
+		mainPanel.add(techBtn);
 		mainPanel.add(titleForMenu);
 	}
 	
@@ -354,7 +357,6 @@ public class SpanishPanel extends JPanel
 		this.add(foodPanel, "name_364289733314566");
 		foodPanel.add(titleForFood);
 		foodPanel.setVisible(false);
-		foodPanel.add(backBtnFoods);
 		foodPanel.add(descriptionArea);
 		foodPanel.add(categoryDropDown);
 		foodPanel.add(itemDropDown);
@@ -365,5 +367,20 @@ public class SpanishPanel extends JPanel
 		foodPanel.add(pictureFruitLabel);
 		foodPanel.add(backBtnFoods);
 		
+	}
+	
+	private void setupTechPanel()
+	{
+		this.add(techPanel);
+		techPanel.setVisible(false);
+		techPanel.add(titleForTech);
+		techPanel.add(backBtnTech);
+		techPanel.add(engLT);
+		techPanel.add(spanLT);
+		techPanel.add(cateTechDropDown);
+		techPanel.add(itemTechDropDown);
+		techPanel.add(engTBox);
+		techPanel.add(spanTBox);
+		techPanel.add(pictureTechLabel);
 	}
 }

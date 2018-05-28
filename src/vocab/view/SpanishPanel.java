@@ -76,8 +76,7 @@ public class SpanishPanel extends JPanel
 		spanishLabel = new JLabel("Spanish:");
 		category = new JLabel("Choose a Category:");
 		item = new JLabel("Choose an Item:");
-		infoMainMenu = new JLabel("Click the button to start Learning Food Vocabulary!");
-		pictureFruitLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")),JLabel.CENTER);
+		infoMainMenu = new JLabel("Click a button to start Learning Vocabulary!");
 		englishBox = new JTextField();
 		spanishBox = new JTextField();
 		
@@ -130,8 +129,10 @@ public class SpanishPanel extends JPanel
 
 	private void setupLayout()
 	{
+		infoMainMenu.setHorizontalAlignment(SwingConstants.CENTER);
+		pictureFruitLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")),JLabel.CENTER);
 		titleForMenu.setFont(new Font("Comic Sans MS", Font.BOLD, 18));
-		techBtn.setBounds(95, 125, 111, 79);
+		techBtn.setBounds(79, 194, 111, 79);
 		techLayout.putConstraint(SpringLayout.SOUTH, backBtnTech, -10, SpringLayout.SOUTH, techPanel);
 		techLayout.putConstraint(SpringLayout.EAST, backBtnTech, -10, SpringLayout.EAST, techPanel);
 		
@@ -165,7 +166,7 @@ public class SpanishPanel extends JPanel
 		titleForTech.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
 		category.setBounds(92, 44, 122, 20);
 		item.setBounds(112, 76, 116, 20);
-		infoMainMenu.setBounds(90, 152, 331, 30);
+		infoMainMenu.setBounds(131, 124, 264, 30);
 		
 		titleForMenu.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForMenu.setLocation(190, 11);
@@ -174,8 +175,7 @@ public class SpanishPanel extends JPanel
 		titleForFood.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForFood.setBounds(195, 11, 110, 30);
 		
-		foodBtn.setBounds(319, 124, 104, 80);
-		foodBtn.setBounds(181, 194, 149, 90);
+		foodBtn.setBounds(284, 194, 111, 79);
 		
 		backBtnFoods.setBounds(413, 404, 81, 29);
 		descriptionArea.setBounds(240, 214, 254, 178);

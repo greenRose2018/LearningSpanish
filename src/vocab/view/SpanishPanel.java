@@ -20,10 +20,7 @@ public class SpanishPanel extends JPanel
 	
 	//main menu btns
 	private JButton foodBtn;
-<<<<<<< HEAD
 	private JButton techBtn;
-=======
->>>>>>> 9c8c9bdebced76751dddbb13f36360cadf20bd53
 	
 	//back btns
 	private JButton backBtnFoods;
@@ -133,8 +130,6 @@ public class SpanishPanel extends JPanel
 
 	private void setupLayout()
 	{
-<<<<<<< HEAD
-		
 		titleForMenu.setFont(new Font("Comic Sans MS", Font.BOLD, 18));
 		techBtn.setBounds(95, 125, 111, 79);
 		techLayout.putConstraint(SpringLayout.SOUTH, backBtnTech, -10, SpringLayout.SOUTH, techPanel);
@@ -168,12 +163,10 @@ public class SpanishPanel extends JPanel
 		techLayout.putConstraint(SpringLayout.EAST, titleForTech, -154, SpringLayout.EAST, techPanel);
 		titleForTech.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForTech.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
-=======
 		category.setBounds(92, 44, 122, 20);
 		item.setBounds(112, 76, 116, 20);
 		infoMainMenu.setBounds(90, 152, 331, 30);
 		
->>>>>>> 9c8c9bdebced76751dddbb13f36360cadf20bd53
 		titleForMenu.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForMenu.setLocation(190, 11);
 		titleForMenu.setSize(128, 68);
@@ -181,11 +174,8 @@ public class SpanishPanel extends JPanel
 		titleForFood.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForFood.setBounds(195, 11, 110, 30);
 		
-<<<<<<< HEAD
 		foodBtn.setBounds(319, 124, 104, 80);
-=======
 		foodBtn.setBounds(181, 194, 149, 90);
->>>>>>> 9c8c9bdebced76751dddbb13f36360cadf20bd53
 		
 		backBtnFoods.setBounds(413, 404, 81, 29);
 		descriptionArea.setBounds(240, 214, 254, 178);

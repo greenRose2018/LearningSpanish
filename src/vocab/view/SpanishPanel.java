@@ -10,22 +10,26 @@ import javax.swing.*;
 public class SpanishPanel extends JPanel
 {
 	private SpanishController appController;
+	
+	private SpringLayout techLayout;
 
 	//Labels for panels
 	private JLabel titleForFood;
 	private JLabel titleForMenu;
+	private JLabel titleForTech;
 	
 	//main menu btns
 	private JButton foodBtn;
-	
-	//btns inside of the foodPanel
+	private JButton techBtn;
 	
 	//back btns
 	private JButton backBtnFoods;
+	private JButton backBtnTech;
 	
 	//main panels
 	private JPanel foodPanel;
 	private JPanel mainPanel;
+	private JPanel techPanel;
 	
 	//Food Panel
 	private JTextArea descriptionArea;
@@ -36,6 +40,16 @@ public class SpanishPanel extends JPanel
 	private JLabel pictureFruitLabel;
 	private JTextField englishBox;
 	private JTextField spanishBox;
+	
+	//Tech Panel
+	//private JTextArea descriptionArea;
+	private JComboBox cateTechDropDown;
+	private JComboBox itemTechDropDown;
+	private JLabel engLT;
+	private JLabel spanLT;
+	private JLabel pictureTechLabel;
+	private JTextField engTBox;
+	private JTextField spanTBox;
 	
 
 	public SpanishPanel(SpanishController appController)

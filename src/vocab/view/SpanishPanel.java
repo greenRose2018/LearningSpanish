@@ -205,13 +205,22 @@ public class SpanishPanel extends JPanel
 		});	
 		
 		foodBtn.addActionListener(new ActionListener()
-				{
+		{
 			public void actionPerformed(ActionEvent click)
 			{
 				mainPanel.setVisible(false);
 				foodPanel.setVisible(true);
 			}
-				});
+		});
+	
+		techBtn.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				mainPanel.setVisible(false);
+				techPanel.setVisible(true);
+			}
+		});
 		
 		backBtnFoods.addActionListener(new ActionListener()
 		{
@@ -219,6 +228,15 @@ public class SpanishPanel extends JPanel
 			{
 				mainPanel.setVisible(true);
 				foodPanel.setVisible(false);
+			}
+		});
+		
+		backBtnTech.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent click)
+			{
+				mainPanel.setVisible(true);
+				techPanel.setVisible(false);
 			}
 		});
 	}

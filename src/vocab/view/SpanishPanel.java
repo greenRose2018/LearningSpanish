@@ -20,7 +20,10 @@ public class SpanishPanel extends JPanel
 	
 	//main menu btns
 	private JButton foodBtn;
+<<<<<<< HEAD
 	private JButton techBtn;
+=======
+>>>>>>> 9c8c9bdebced76751dddbb13f36360cadf20bd53
 	
 	//back btns
 	private JButton backBtnFoods;
@@ -38,6 +41,9 @@ public class SpanishPanel extends JPanel
 	private JLabel englishLabel;
 	private JLabel spanishLabel;
 	private JLabel pictureFruitLabel;
+	private JLabel category;
+	private JLabel item;
+	private JLabel infoMainMenu;
 	private JTextField englishBox;
 	private JTextField spanishBox;
 	
@@ -71,6 +77,9 @@ public class SpanishPanel extends JPanel
 		
 		englishLabel = new JLabel("English:");
 		spanishLabel = new JLabel("Spanish:");
+		category = new JLabel("Choose a Category:");
+		item = new JLabel("Choose an Item:");
+		infoMainMenu = new JLabel("Click the button to start Learning Food Vocabulary!");
 		pictureFruitLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")),JLabel.CENTER);
 		englishBox = new JTextField();
 		spanishBox = new JTextField();
@@ -124,6 +133,7 @@ public class SpanishPanel extends JPanel
 
 	private void setupLayout()
 	{
+<<<<<<< HEAD
 		
 		titleForMenu.setFont(new Font("Comic Sans MS", Font.BOLD, 18));
 		techBtn.setBounds(95, 125, 111, 79);
@@ -158,6 +168,12 @@ public class SpanishPanel extends JPanel
 		techLayout.putConstraint(SpringLayout.EAST, titleForTech, -154, SpringLayout.EAST, techPanel);
 		titleForTech.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForTech.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
+=======
+		category.setBounds(92, 44, 122, 20);
+		item.setBounds(112, 76, 116, 20);
+		infoMainMenu.setBounds(90, 152, 331, 30);
+		
+>>>>>>> 9c8c9bdebced76751dddbb13f36360cadf20bd53
 		titleForMenu.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForMenu.setLocation(190, 11);
 		titleForMenu.setSize(128, 68);
@@ -165,7 +181,11 @@ public class SpanishPanel extends JPanel
 		titleForFood.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForFood.setBounds(195, 11, 110, 30);
 		
+<<<<<<< HEAD
 		foodBtn.setBounds(319, 124, 104, 80);
+=======
+		foodBtn.setBounds(181, 194, 149, 90);
+>>>>>>> 9c8c9bdebced76751dddbb13f36360cadf20bd53
 		
 		backBtnFoods.setBounds(413, 404, 81, 29);
 		descriptionArea.setBounds(240, 214, 254, 178);
@@ -174,7 +194,7 @@ public class SpanishPanel extends JPanel
 		itemDropDown.setBounds(240, 72, 254, 30);
 		englishLabel.setBounds(240, 114, 65, 30);
 		spanishLabel.setBounds(240, 155, 65, 30);
-		pictureFruitLabel.setBounds(6, 40, 222, 352);
+		pictureFruitLabel.setBounds(6, 110, 222, 282);
 		englishBox.setBounds(327, 119, 167, 20);
 		spanishBox.setBounds(327, 160, 167, 20);
 		descriptionArea.setEditable(false);
@@ -182,6 +202,7 @@ public class SpanishPanel extends JPanel
 	
 	private void setupListeners()
 	{
+		//startComplexity
 		categoryDropDown.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent selection)
@@ -195,6 +216,7 @@ public class SpanishPanel extends JPanel
 				updateItemImage();
 			}
 		});
+		//endComplexity
 		itemDropDown.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent selection)
@@ -240,7 +262,7 @@ public class SpanishPanel extends JPanel
 			}
 		});
 	}
-	
+	//startComplexity
 	private void itemDropDown() 
 	{
 		int selected = categoryDropDown.getSelectedIndex();
@@ -266,7 +288,7 @@ public class SpanishPanel extends JPanel
 			updateFruitInfo(selectedItemIndex);	
 		}
 	}
-	
+	//endComplexity
 	private void setupComboBox()
 	{
 		DefaultComboBoxModel foodModel = new DefaultComboBoxModel(appController.convertFood());
@@ -277,6 +299,7 @@ public class SpanishPanel extends JPanel
 	}
 	
 	//Helper Methods
+	//startComplexity
 	private void updateDropDown(int selected)
 	{
 		if(selected == 0)
@@ -305,6 +328,8 @@ public class SpanishPanel extends JPanel
 			itemDropDown.setModel(fruit);
 		}
 	}
+	//endComplexity
+	
 	private void updateItemImage()
 	{
 		String path = "/vocab/view/images/";
@@ -368,6 +393,7 @@ public class SpanishPanel extends JPanel
 		mainPanel.add(foodBtn);
 		mainPanel.add(techBtn);
 		mainPanel.add(titleForMenu);
+		mainPanel.add(infoMainMenu);
 	}
 	
 	private void setupFoodsPanel()
@@ -384,6 +410,8 @@ public class SpanishPanel extends JPanel
 		foodPanel.add(spanishBox);
 		foodPanel.add(pictureFruitLabel);
 		foodPanel.add(backBtnFoods);
+		foodPanel.add(category);
+		foodPanel.add(item);
 		
 	}
 	

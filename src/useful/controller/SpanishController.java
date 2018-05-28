@@ -145,7 +145,7 @@ public class SpanishController
 	{
 		return mainFrame;
 	}
-	
+	//startAbstraction
 	public String [] convertFood()
 	{
 		String [] names = new String [foodList.size()];
@@ -156,7 +156,7 @@ public class SpanishController
 		}
 		return names;
 	}
-	
+	//endAbstraction
 	public String[] convertItem()
 	{
 		String [] names = new String [fruits.size()];
@@ -209,4 +209,5 @@ public class SpanishController
 		}
 		return names;
 	}	
+	
 }

@@ -4,7 +4,7 @@ public class Shrimp extends Seafoods
 {
 	public Shrimp()
 	{
-		super("Shrimp", "El camarón","Seafood");
+		super("Shrimp", "El camarÃ³n","Seafood");
 	}
 	
 	public String englishWord()
@@ -14,7 +14,7 @@ public class Shrimp extends Seafoods
 	
 	public String spanishWord()
 	{
-		return "El camarón";
+		return "El camarÃ³n";
 	}
 	
 	public String categoryFood()

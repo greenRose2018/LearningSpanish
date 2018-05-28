@@ -57,9 +57,12 @@ public class SpanishPanel extends JPanel
 		super();
 		this.appController = appController;
 		
+		techLayout = new SpringLayout();
+		
 		//main panels
 		mainPanel = new JPanel();
 		foodPanel = new JPanel();
+		techPanel = new JPanel();
 		
 		//Food panel
 		descriptionArea = new JTextArea(5,10);
@@ -75,9 +78,25 @@ public class SpanishPanel extends JPanel
 		//titles for panels
 		titleForMenu = new JLabel("Main Menu");
 		titleForFood = new JLabel("Foods in Spanish");
+		titleForTech = new JLabel("Technical Terms in Spanish");
 		
+		//main panel
 		foodBtn = new JButton("Foods");	
+		techBtn = new JButton("Technical Words");
+		
+		//backbtns
 		backBtnFoods = new JButton("Back");
+		backBtnTech = new JButton("Back");
+		
+		// techpanel
+		cateTechDropDown = new JComboBox();
+		itemTechDropDown = new JComboBox();
+		engLT = new JLabel("English:");
+		spanLT = new JLabel("Spanish:");
+		pictureTechLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")), JLabel.CENTER);
+		
+		engTBox = new JTextField();
+		spanTBox = new JTextField();
 		
 		setupComboBox();
 		setupPanel();

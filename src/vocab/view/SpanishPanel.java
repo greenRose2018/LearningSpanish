@@ -129,43 +129,44 @@ public class SpanishPanel extends JPanel
 
 	private void setupLayout()
 	{
+		
+		techLayout.putConstraint(SpringLayout.WEST, cateTechDropDown, 22, SpringLayout.WEST, techPanel);
+		techLayout.putConstraint(SpringLayout.SOUTH, cateTechDropDown, -334, SpringLayout.SOUTH, techPanel);
+		techLayout.putConstraint(SpringLayout.NORTH, itemTechDropDown, 39, SpringLayout.SOUTH, cateTechDropDown);
+		techLayout.putConstraint(SpringLayout.WEST, itemTechDropDown, 0, SpringLayout.WEST, cateTechDropDown);
+		techLayout.putConstraint(SpringLayout.WEST, engLT, 10, SpringLayout.WEST, techPanel);
+		techLayout.putConstraint(SpringLayout.SOUTH, engLT, -155, SpringLayout.SOUTH, techPanel);
+		
+		techLayout.putConstraint(SpringLayout.NORTH, spanLT, 29, SpringLayout.SOUTH, engLT);
+		techLayout.putConstraint(SpringLayout.WEST, spanLT, 0, SpringLayout.WEST, engLT);
+		
+		techLayout.putConstraint(SpringLayout.EAST, cateTechDropDown, -6, SpringLayout.WEST, pictureTechLabel);
+		techLayout.putConstraint(SpringLayout.EAST, itemTechDropDown, -6, SpringLayout.WEST, pictureTechLabel);
+		techLayout.putConstraint(SpringLayout.NORTH, pictureTechLabel, 46, SpringLayout.NORTH, techPanel);
+		techLayout.putConstraint(SpringLayout.WEST, pictureTechLabel, 259, SpringLayout.WEST, techPanel);
+		techLayout.putConstraint(SpringLayout.EAST, pictureTechLabel, -10, SpringLayout.EAST, techPanel);
+		techLayout.putConstraint(SpringLayout.SOUTH, titleForTech, -6, SpringLayout.NORTH, pictureTechLabel);
+		
+		techLayout.putConstraint(SpringLayout.WEST, engTBox, 21, SpringLayout.EAST, engLT);
+		techLayout.putConstraint(SpringLayout.EAST, engTBox, -168, SpringLayout.EAST, techPanel);
+		techLayout.putConstraint(SpringLayout.SOUTH, pictureTechLabel, -21, SpringLayout.NORTH, engTBox);
+		techLayout.putConstraint(SpringLayout.NORTH, engTBox, -5, SpringLayout.NORTH, engLT);
+		techLayout.putConstraint(SpringLayout.NORTH, spanTBox, 19, SpringLayout.SOUTH, engTBox);
+		techLayout.putConstraint(SpringLayout.EAST, spanTBox, 0, SpringLayout.EAST, titleForTech);
+		techLayout.putConstraint(SpringLayout.WEST, spanTBox, 18, SpringLayout.EAST, spanLT);
+		techLayout.putConstraint(SpringLayout.NORTH, titleForTech, 10, SpringLayout.NORTH, techPanel);
+		techLayout.putConstraint(SpringLayout.WEST, titleForTech, 153, SpringLayout.WEST, techPanel);
+		techLayout.putConstraint(SpringLayout.EAST, titleForTech, -168, SpringLayout.EAST, techPanel);
 		infoMainMenu.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForMenu.setFont(new Font("Comic Sans MS", Font.BOLD, 18));
-		techBtn.setBounds(79, 194, 111, 79);
+		techBtn.setBounds(79, 194, 147, 79);
 		techLayout.putConstraint(SpringLayout.SOUTH, backBtnTech, -10, SpringLayout.SOUTH, techPanel);
 		techLayout.putConstraint(SpringLayout.EAST, backBtnTech, -10, SpringLayout.EAST, techPanel);
-		
-		techLayout.putConstraint(SpringLayout.SOUTH, cateTechDropDown, -364, SpringLayout.SOUTH, techPanel);
-		techLayout.putConstraint(SpringLayout.EAST, cateTechDropDown, -45, SpringLayout.EAST, techPanel);
-		techLayout.putConstraint(SpringLayout.NORTH, itemTechDropDown, 30, SpringLayout.SOUTH, cateTechDropDown);
-		techLayout.putConstraint(SpringLayout.WEST, itemTechDropDown, 283, SpringLayout.WEST, techPanel);
-		techLayout.putConstraint(SpringLayout.EAST, itemTechDropDown, 0, SpringLayout.EAST, cateTechDropDown);
-		techLayout.putConstraint(SpringLayout.WEST, titleForTech, -165, SpringLayout.EAST, engLT);
-		techLayout.putConstraint(SpringLayout.NORTH, spanLT, 255, SpringLayout.NORTH, techPanel);
-		techLayout.putConstraint(SpringLayout.EAST, engLT, 0, SpringLayout.EAST, spanLT);
-		techLayout.putConstraint(SpringLayout.NORTH, titleForTech, -36, SpringLayout.NORTH, pictureTechLabel);
-		techLayout.putConstraint(SpringLayout.SOUTH, titleForTech, -6, SpringLayout.NORTH, pictureTechLabel);
-		techLayout.putConstraint(SpringLayout.WEST, cateTechDropDown, 43, SpringLayout.EAST, pictureTechLabel);
-		techLayout.putConstraint(SpringLayout.WEST, spanLT, 39, SpringLayout.EAST, pictureTechLabel);
-		techLayout.putConstraint(SpringLayout.NORTH, pictureTechLabel, 59, SpringLayout.NORTH, techPanel);
-		techLayout.putConstraint(SpringLayout.WEST, pictureTechLabel, 10, SpringLayout.WEST, techPanel);
-		techLayout.putConstraint(SpringLayout.SOUTH, pictureTechLabel, -50, SpringLayout.SOUTH, techPanel);
-		techLayout.putConstraint(SpringLayout.EAST, pictureTechLabel, -260, SpringLayout.EAST, techPanel);
-		techLayout.putConstraint(SpringLayout.WEST, engTBox, 21, SpringLayout.EAST, engLT);
-		techLayout.putConstraint(SpringLayout.SOUTH, engTBox, -229, SpringLayout.SOUTH, techPanel);
-		techLayout.putConstraint(SpringLayout.EAST, engTBox, -49, SpringLayout.EAST, techPanel);
-		techLayout.putConstraint(SpringLayout.NORTH, engLT, 3, SpringLayout.NORTH, engTBox);
-		
-		techLayout.putConstraint(SpringLayout.NORTH, spanTBox, 252, SpringLayout.NORTH, techPanel);
-		techLayout.putConstraint(SpringLayout.WEST, spanTBox, 21, SpringLayout.EAST, spanLT);
-		techLayout.putConstraint(SpringLayout.EAST, spanTBox, -49, SpringLayout.EAST, techPanel);
-		
-		techLayout.putConstraint(SpringLayout.EAST, titleForTech, -154, SpringLayout.EAST, techPanel);
 		titleForTech.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForTech.setFont(new Font("Comic Sans MS", Font.PLAIN, 14));
 		category.setBounds(92, 44, 122, 20);
 		item.setBounds(112, 76, 116, 20);
-		infoMainMenu.setBounds(131, 124, 264, 30);
+		infoMainMenu.setBounds(99, 124, 292, 30);
 		
 		titleForMenu.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForMenu.setLocation(190, 11);
@@ -174,7 +175,7 @@ public class SpanishPanel extends JPanel
 		titleForFood.setHorizontalAlignment(SwingConstants.CENTER);
 		titleForFood.setBounds(195, 11, 110, 30);
 		
-		foodBtn.setBounds(284, 194, 111, 79);
+		foodBtn.setBounds(264, 194, 147, 79);
 		
 		backBtnFoods.setBounds(413, 404, 81, 29);
 		descriptionArea.setBounds(240, 214, 254, 178);

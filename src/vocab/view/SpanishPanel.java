@@ -331,7 +331,6 @@ public class SpanishPanel extends JPanel
 	}
 	
 	//Helper Methods
-	//startComplexity
 	private void updateDropDown(int selected)
 	{
 		if(selected == 0)
@@ -360,7 +359,6 @@ public class SpanishPanel extends JPanel
 			itemDropDown.setModel(fruit);
 		}
 	}
-	//endComplexity
 	private void updateTechDropDown(int selected)
 	{
 		if(selected == 0)

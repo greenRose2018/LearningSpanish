@@ -3,7 +3,7 @@ package vocab.model.tech.computerscience;
 import vocab.model.TechnicalWords;
 import vocab.model.interfaces.*;
 
-public class BigData extends TechnicalWords implements Technical
+public class BigData extends ComputerScience
 {
 //	public BigData(String englishWord, String spanishWord, String typeOfTech) 
 //	{

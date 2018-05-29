@@ -26,9 +26,9 @@ public class SpanishController
 	
 	private SpanishFrame mainFrame;
 	
-	private List<TechnicalWords> computerScienceList;
-	
-	private List<TechnicalWords> computerEngineeringList;
+	private List<ComputerScience> computerScienceList;
+	private List<ComputerEngineering> computerEngineeringList;
+	private List<TechnicalWords> computerList;
 	
 	public SpanishController()
 	{
@@ -39,8 +39,9 @@ public class SpanishController
 		vegetableList = new ArrayList<Vegetables>();
 		meatList = new ArrayList<Meats>();
 		
-		computerScienceList = new ArrayList<TechnicalWords>();
-		computerEngineeringList = new ArrayList<TechnicalWords>();
+		computerScienceList = new ArrayList<ComputerScience>();
+		computerEngineeringList = new ArrayList<ComputerEngineering>();
+		computerList = new ArrayList<TechnicalWords>();
 		
 		buildFruitVocab();
 		buildFoodList();
@@ -58,6 +59,12 @@ public class SpanishController
 	public void start()
 	{
 		
+	}
+	
+	public void buildComputer()
+	{
+		computerList.add(new ComputerEngineering());
+		computerList.add(new ComputerScience());
 	}
 	
 	public void buildScience()
@@ -150,12 +157,15 @@ public class SpanishController
 		foodList.add(new Vegetables());
 		foodList.add(new Fruits());
 	}
-	public List<TechnicalWords> getComputerScienceList() {
+	public List<ComputerScience> getComputerScienceList() {
 		return computerScienceList;
 	}
 
-	public List<TechnicalWords> getComputerEngineeringList() {
+	public List<ComputerEngineering> getComputerEngineeringList() {
 		return computerEngineeringList;
+	}
+	public List<TechnicalWords> getComputerList() {
+		return computerList;
 	}
 	public List<Fruits> getFruits()
 	{
@@ -259,9 +269,9 @@ public class SpanishController
 	{
 		String [] names = new String [computerScienceList.size()];
 		
-		for (int index = 0; index < meatList.size(); index++)
+		for (int index = 0; index < computerScienceList.size(); index++)
 		{
-			names[index] = meatList.get(index).getEnglishWord();
+			names[index] = computerScienceList.get(index).getEnglishWord();
 		}
 		return names;
 	}	
@@ -269,9 +279,20 @@ public class SpanishController
 	{
 		String [] names = new String [computerEngineeringList.size()];
 		
-		for (int index = 0; index < meatList.size(); index++)
+		for (int index = 0; index < computerEngineeringList.size(); index++)
 		{
-			names[index] = meatList.get(index).getEnglishWord();
+			names[index] = computerEngineeringList.get(index).getEnglishWord();
+		}
+		return names;
+	}	
+	
+	public String[] convertComputer()
+	{
+		String [] names = new String [computerList.size()];
+		
+		for (int index = 0; index < computerList.size(); index++)
+		{
+			names[index] = computerList.get(index).getEnglishWord();
 		}
 		return names;
 	}	

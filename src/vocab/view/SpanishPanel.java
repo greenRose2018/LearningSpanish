@@ -206,6 +206,28 @@ public class SpanishPanel extends JPanel
 			}
 		});
 		//endComplexity
+		itemTechDropDown.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+				itemTechDropDown();
+				updateTechItemImage();
+			}
+		});	
+		
+		cateTechDropDown.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+				int selected = cateTechDropDown.getSelectedIndex();
+				
+				itemTechDropDown.enable(true);
+				
+				updateTechDropDown(selected);				
+				updateComputerInfo(selected);
+				updateTechItemImage();
+			}
+		});
 		itemDropDown.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent selection)
@@ -278,6 +300,21 @@ public class SpanishPanel extends JPanel
 		}
 	}
 	//endComplexity
+	private void itemTechDropDown() 
+	{
+		int selected = cateTechDropDown.getSelectedIndex();
+		int selectedItemIndex = itemTechDropDown.getSelectedIndex();
+		if(selected == 0)
+		{
+			updateEngineeringInfo(selectedItemIndex);
+		}
+		else if(selected == 1)
+		{
+			updateScienceInfo(selectedItemIndex);
+		}
+		
+	}
+	
 	private void setupComboBox()
 	{
 		DefaultComboBoxModel foodModel = new DefaultComboBoxModel(appController.convertFood());
@@ -285,6 +322,13 @@ public class SpanishPanel extends JPanel
 		
 		DefaultComboBoxModel itemModel = new DefaultComboBoxModel(appController.convertBakedGoods());
 		itemDropDown.setModel(itemModel);
+		
+		DefaultComboBoxModel techModel = new DefaultComboBoxModel(appController.convertComputer());
+		cateTechDropDown.setModel(techModel);
+		
+		DefaultComboBoxModel itemTechModel = new DefaultComboBoxModel(appController.convertEngineer());
+		itemTechDropDown.setModel(itemTechModel);
+		
 	}
 	
 	//Helper Methods
@@ -318,6 +362,19 @@ public class SpanishPanel extends JPanel
 		}
 	}
 	//endComplexity
+	private void updateTechDropDown(int selected)
+	{
+		if(selected == 0)
+		{
+			DefaultComboBoxModel engineer = new DefaultComboBoxModel(appController.convertEngineer());
+			itemTechDropDown.setModel(engineer);
+		}
+		else if(selected == 1)
+		{
+			DefaultComboBoxModel science = new DefaultComboBoxModel(appController.convertScience());
+			itemTechDropDown.setModel(science);
+		}
+	}
 	
 	private void updateItemImage()
 	{
@@ -336,6 +393,25 @@ public class SpanishPanel extends JPanel
 			itemIcon = new ImageIcon(getClass().getResource(path + defaultName + extension));
 		}
 		pictureFruitLabel.setIcon(itemIcon);
+		
+	}
+	private void updateTechItemImage()
+	{
+		String path = "/vocab/view/images/";
+		String defaultName = "default";
+		String name = itemTechDropDown.getSelectedItem().toString().trim();
+		String extension = ".png";
+		
+		ImageIcon itemIcon;
+		
+		try {
+			itemIcon = new ImageIcon(getClass().getResource(path + name + extension));
+		}
+		catch(NullPointerException missingImageFile)
+		{
+			itemIcon = new ImageIcon(getClass().getResource(path + defaultName + extension));
+		}
+		pictureTechLabel.setIcon(itemIcon);
 		
 	}
 	
@@ -373,6 +449,19 @@ public class SpanishPanel extends JPanel
 	{
 		englishBox.setText(appController.getFood().get(index).englishWord());
 		spanishBox.setText(appController.getFood().get(index).spanishWord());	
+	}
+	private void updateComputerInfo(int index)
+	{	
+		engTBox.setText(appController.getComputerList().get(index).getEnglishWord());
+		engTBox.setText(appController.getComputerList().get(index).getSpanishWord());
+	}private void updateScienceInfo(int index)
+	{
+		engTBox.setText(appController.getComputerScienceList().get(index).englishWord());
+		spanTBox.setText(appController.getComputerScienceList().get(index).spanishWord());	
+	}private void updateEngineeringInfo(int index)
+	{
+		engTBox.setText(appController.getComputerEngineeringList().get(index).englishWord());
+		spanTBox.setText(appController.getComputerEngineeringList().get(index).spanishWord());	
 	}
 	
 	private void setupMainMenuPanel()

@@ -24,19 +24,16 @@ public class ComputerScience extends TechnicalWords implements Technical
 		// TODO Auto-generated constructor stub
 	}
 	
-	@Override
 	public String englishWord() {
 		// TODO Auto-generated method stub
 		return "Computer Science";
 	}
 
-	@Override
 	public String spanishWord() {
 		// TODO Auto-generated method stub
 		return "Ciencias de la Computación";
 	}
 
-	@Override
 	public String categoryTech() {
 		// TODO Auto-generated method stub
 		return "Computer Science";

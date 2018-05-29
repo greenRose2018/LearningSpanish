@@ -6,24 +6,32 @@ import vocab.model.interfaces.Technical;
 public class ComputerEngineering extends TechnicalWords implements Technical
 {
 
+	public ComputerEngineering(String englishWord, String spanishWord, String typeOfTech) {
+		super(englishWord, spanishWord, typeOfTech);
+	}
+	
+	public ComputerEngineering( String spanishWord, String typeOfTech) {
+		super("Computer Engineering", spanishWord, typeOfTech);
+	}
+
+	public ComputerEngineering( String typeOfTech) {
+		super("Computer Engineering", "Ingeniería Informática", typeOfTech);
+	}
 	public ComputerEngineering() {
 		super("Computer Engineering", "Ingeniería Informática", "Computer Engineering");
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
 	public String englishWord() {
 		// TODO Auto-generated method stub
 		return "Computer Engineering";
 	}
 
-	@Override
 	public String spanishWord() {
 		// TODO Auto-generated method stub
 		return "Ingeniería Informática";
 	}
 
-	@Override
 	public String categoryTech() {
 		// TODO Auto-generated method stub
 		return "Computer Engineering";

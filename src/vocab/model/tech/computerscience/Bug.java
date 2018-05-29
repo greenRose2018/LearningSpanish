@@ -3,7 +3,7 @@ package vocab.model.tech.computerscience;
 import vocab.model.TechnicalWords;
 import vocab.model.interfaces.Technical;
 
-public class Bug extends TechnicalWords implements Technical
+public class Bug extends ComputerScience
 {
 
 	public Bug() 
@@ -12,19 +12,16 @@ public class Bug extends TechnicalWords implements Technical
 		// TODO Auto-generated constructor stub
 	}
 
-	@Override
 	public String englishWord() {
 		// TODO Auto-generated method stub
 		return "Bug";
 	}
 
-	@Override
 	public String spanishWord() {
 		// TODO Auto-generated method stub
 		return "El error de programacion";
 	}
 
-	@Override
 	public String categoryTech() {
 		// TODO Auto-generated method stub
 		return "Computer Science";

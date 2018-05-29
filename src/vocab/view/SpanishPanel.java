@@ -396,7 +396,7 @@ public class SpanishPanel extends JPanel
 	{
 		String path = "/vocab/view/images/";
 		String defaultName = "default";
-		String name = itemTechDropDown.getSelectedItem().toString().trim();
+		String name = itemTechDropDown.getSelectedItem().toString().replaceAll(" ", "");
 		String extension = ".png";
 		
 		ImageIcon itemIcon;

@@ -11,6 +11,9 @@ import vocab.model.food.meats.*;
 import vocab.model.food.seafoods.*;
 import vocab.model.food.vegetables.*;
 import vocab.model.interfaces.*;
+import vocab.model.tech.computerengineering.*;
+import vocab.model.tech.computerscience.*;
+import vocab.model.TechnicalWords;
 
 public class SpanishController
 {
@@ -20,7 +23,12 @@ public class SpanishController
 	private List<Seafoods> seafoodList;
 	private List<Vegetables> vegetableList;
 	private List<Meats> meatList;
+	
 	private SpanishFrame mainFrame;
+	
+	private List<TechnicalWords> computerScienceList;
+	
+	private List<TechnicalWords> computerEngineeringList;
 	
 	public SpanishController()
 	{
@@ -30,6 +38,10 @@ public class SpanishController
 		seafoodList = new ArrayList<Seafoods>();
 		vegetableList = new ArrayList<Vegetables>();
 		meatList = new ArrayList<Meats>();
+		
+		computerScienceList = new ArrayList<TechnicalWords>();
+		computerEngineeringList = new ArrayList<TechnicalWords>();
+		
 		buildFruitVocab();
 		buildFoodList();
 		buildSeafood();
@@ -37,11 +49,37 @@ public class SpanishController
 		buildMeat();
 		buildBakedGoods();
 		
+		buildScience();
+		buildEngineer();
+		
 		mainFrame = new SpanishFrame(this);
 	}
 	
 	public void start()
 	{
+		
+	}
+	
+	public void buildScience()
+	{
+		computerScienceList.add(new BigData());
+		computerScienceList.add(new Bug());
+		computerScienceList.add(new Code());
+		computerScienceList.add(new ComputerScience());
+		computerScienceList.add(new ControlPanel());
+		computerScienceList.add(new DataStructures());
+		computerScienceList.add(new Debug());
+	}
+	
+	public void buildEngineer()
+	{
+		computerEngineeringList.add(new ComputerEngineering());
+		computerEngineeringList.add(new CPU());
+		computerEngineeringList.add(new Hardware());
+		computerEngineeringList.add(new MotherBoard());
+		computerEngineeringList.add(new RAM());
+		computerEngineeringList.add(new ROM());
+		computerEngineeringList.add(new Screen());
 		
 	}
 	
@@ -111,6 +149,13 @@ public class SpanishController
 		foodList.add(new Seafoods());
 		foodList.add(new Vegetables());
 		foodList.add(new Fruits());
+	}
+	public List<TechnicalWords> getComputerScienceList() {
+		return computerScienceList;
+	}
+
+	public List<TechnicalWords> getComputerEngineeringList() {
+		return computerEngineeringList;
 	}
 	public List<Fruits> getFruits()
 	{
@@ -210,4 +255,24 @@ public class SpanishController
 		return names;
 	}	
 	
+	public String[] convertScience()
+	{
+		String [] names = new String [computerScienceList.size()];
+		
+		for (int index = 0; index < meatList.size(); index++)
+		{
+			names[index] = meatList.get(index).getEnglishWord();
+		}
+		return names;
+	}	
+	public String[] convertEngineer()
+	{
+		String [] names = new String [computerEngineeringList.size()];
+		
+		for (int index = 0; index < meatList.size(); index++)
+		{
+			names[index] = meatList.get(index).getEnglishWord();
+		}
+		return names;
+	}	
 }

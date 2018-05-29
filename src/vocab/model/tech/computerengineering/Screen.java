@@ -8,7 +8,7 @@ public class Screen extends ComputerEngineering
 
 	public Screen() 
 	{
-		super("Monitor (Screen)", "La pantalla", "Computer Engineering");
+		super("Monitor", "La pantalla", "Computer Engineering");
 		// TODO Auto-generated constructor stub
 	}
 	public String englishWord() {

@@ -8,7 +8,7 @@ public class RAM extends ComputerEngineering
 
 	public RAM() 
 	{
-		super("RAM (Random Access Memory)", "La RAM (Memoria de acceso aleatorio)", "Computer Engineering");
+		super("RAM", "La RAM (Memoria de acceso aleatorio)", "Computer Engineering");
 		// TODO Auto-generated constructor stub
 	}
 

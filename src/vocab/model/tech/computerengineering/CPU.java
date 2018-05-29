@@ -7,7 +7,7 @@ public class CPU extends ComputerEngineering
 {
 
 	public CPU() {
-		super("CPU (Central Processing Unit)", "La CPU (Unidad central de procesamiento)", "Computer Engineering");
+		super("CPU", "La CPU (Unidad central de procesamiento)", "Computer Engineering");
 		// TODO Auto-generated constructor stub
 	}
 

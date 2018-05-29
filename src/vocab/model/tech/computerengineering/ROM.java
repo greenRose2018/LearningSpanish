@@ -7,7 +7,7 @@ public class ROM extends ComputerEngineering
 {
 
 	public ROM() {
-		super("ROM (Read only memory)", "La ROM (memoria de solo lectura)", "Computer Engineering");
+		super("ROM", "La ROM (memoria de solo lectura)", "Computer Engineering");
 		// TODO Auto-generated constructor stub
 	}
 	public String englishWord() {

@@ -84,6 +84,7 @@ public class SpanishPanel extends JPanel
 		titleForFood = new JLabel("Foods in Spanish");
 		titleForTech = new JLabel("Technical Terms in Spanish");
 		
+		
 		pictureFruitLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")),JLabel.CENTER);
 		//main panel
 		foodBtn = new JButton("Foods");	
@@ -99,10 +100,9 @@ public class SpanishPanel extends JPanel
 		engLT = new JLabel("English:");
 		spanLT = new JLabel("Spanish:");
 		pictureTechLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")), JLabel.CENTER);
-		
-		engTBox = new JTextField();
+		engTBox = new JTextField();		
 		spanTBox = new JTextField();
-		
+				
 		setupComboBox();
 		setupPanel();
 		setupLayout();

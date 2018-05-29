@@ -52,6 +52,7 @@ public class SpanishController
 		
 		buildScience();
 		buildEngineer();
+		buildComputer();
 		
 		mainFrame = new SpanishFrame(this);
 	}

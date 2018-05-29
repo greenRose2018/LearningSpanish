@@ -44,7 +44,7 @@ public class SpanishPanel extends JPanel
 	private JTextField englishBox;
 	private JTextField spanishBox;
 	
-	//Tech Panel
+	//Tech Panel	
 	private JComboBox cateTechDropDown;
 	private JComboBox itemTechDropDown;
 	private JLabel engLT;
@@ -93,7 +93,7 @@ public class SpanishPanel extends JPanel
 		backBtnFoods = new JButton("Back");
 		backBtnTech = new JButton("Back");
 		
-		// techpanel
+		//Tech panel
 		cateTechDropDown = new JComboBox();
 		itemTechDropDown = new JComboBox();
 		engLT = new JLabel("English:");
@@ -191,7 +191,6 @@ public class SpanishPanel extends JPanel
 	
 	private void setupListeners()
 	{
-		//startComplexity
 		categoryDropDown.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent selection)
@@ -205,7 +204,14 @@ public class SpanishPanel extends JPanel
 				updateItemImage();
 			}
 		});
-		//endComplexity
+		itemDropDown.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+				itemDropDown();
+				updateItemImage();
+			}
+		});
 		itemTechDropDown.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent selection)
@@ -228,14 +234,7 @@ public class SpanishPanel extends JPanel
 				updateTechItemImage();
 			}
 		});
-		itemDropDown.addActionListener(new ActionListener()
-		{
-			public void actionPerformed(ActionEvent selection)
-			{
-				itemDropDown();
-				updateItemImage();
-			}
-		});	
+			
 		
 		foodBtn.addActionListener(new ActionListener()
 		{

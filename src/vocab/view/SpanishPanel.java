@@ -52,6 +52,8 @@ public class SpanishPanel extends JPanel
 	private JLabel pictureTechLabel;
 	private JTextField engTBox;
 	private JTextField spanTBox;
+	private JLabel categoryTech;
+	private JLabel itemTech;
 	
 
 	public SpanishPanel(SpanishController appController)
@@ -77,7 +79,9 @@ public class SpanishPanel extends JPanel
 		item = new JLabel("Choose an Item:");
 		infoMainMenu = new JLabel("Click a button to start Learning Vocabulary!");
 		englishBox = new JTextField();
+		englishBox.setEditable(false);
 		spanishBox = new JTextField();
+		spanishBox.setEditable(false);
 		
 		//titles for panels
 		titleForMenu = new JLabel("Main Menu");
@@ -97,11 +101,14 @@ public class SpanishPanel extends JPanel
 		//Tech panel
 		cateTechDropDown = new JComboBox();
 		itemTechDropDown = new JComboBox();
+		
 		engLT = new JLabel("English:");
 		spanLT = new JLabel("Spanish:");
 		pictureTechLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")), JLabel.CENTER);
-		engTBox = new JTextField();		
+		engTBox = new JTextField();
 		spanTBox = new JTextField();
+		categoryTech= new JLabel("Choose a Category:");
+		itemTech = new JLabel("Choose an Item:");
 				
 		setupComboBox();
 		setupPanel();
@@ -130,6 +137,14 @@ public class SpanishPanel extends JPanel
 	private void setupLayout()
 	{
 		
+				
+		engTBox.setEditable(false);
+		spanTBox.setEditable(false);
+		techLayout.putConstraint(SpringLayout.WEST, categoryTech, 0, SpringLayout.WEST, cateTechDropDown);
+		techLayout.putConstraint(SpringLayout.SOUTH, categoryTech, -6, SpringLayout.NORTH, cateTechDropDown);
+		techLayout.putConstraint(SpringLayout.WEST, itemTech, 0, SpringLayout.WEST, cateTechDropDown);
+		techLayout.putConstraint(SpringLayout.SOUTH, itemTech, -6, SpringLayout.NORTH, itemTechDropDown);
+		itemTechDropDown.setEnabled(false);
 		techLayout.putConstraint(SpringLayout.WEST, cateTechDropDown, 22, SpringLayout.WEST, techPanel);
 		techLayout.putConstraint(SpringLayout.SOUTH, cateTechDropDown, -334, SpringLayout.SOUTH, techPanel);
 		techLayout.putConstraint(SpringLayout.NORTH, itemTechDropDown, 39, SpringLayout.SOUTH, cateTechDropDown);
@@ -504,5 +519,7 @@ public class SpanishPanel extends JPanel
 		techPanel.add(engTBox);
 		techPanel.add(spanTBox);
 		techPanel.add(pictureTechLabel);
+		techPanel.add(categoryTech);
+		techPanel.add(itemTech);
 	}
 }

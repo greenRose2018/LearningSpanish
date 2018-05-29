@@ -3,25 +3,24 @@ package vocab.model.tech.computerengineering;
 import vocab.model.TechnicalWords;
 import vocab.model.interfaces.Technical;
 
-public class Hardware extends TechnicalWords implements Technical
+public class ComputerEngineering extends TechnicalWords implements Technical
 {
 
-	public Hardware() 
-	{
-		super("Hardware", "El hardware", "Computer Engineering");
+	public ComputerEngineering() {
+		super("Computer Engineering", "Ingeniería Informática", "Computer Engineering");
 		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public String englishWord() {
 		// TODO Auto-generated method stub
-		return "Hardware";
+		return "Computer Engineering";
 	}
 
 	@Override
 	public String spanishWord() {
 		// TODO Auto-generated method stub
-		return "El hardware";
+		return "Ingeniería Informática";
 	}
 
 	@Override
@@ -29,5 +28,6 @@ public class Hardware extends TechnicalWords implements Technical
 		// TODO Auto-generated method stub
 		return "Computer Engineering";
 	}
+	
 
 }

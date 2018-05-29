@@ -15,7 +15,7 @@ public class BigData extends TechnicalWords implements Technical
 //	}
 //	public BigData(String typeOfTech) 
 //	{
-//		super("Big Data", spanishWord, typeOfTech);
+//		super("Big Data", "Grandes Datos", typeOfTech);
 //	}
 	public BigData() 
 	{

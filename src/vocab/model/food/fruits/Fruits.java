@@ -1,7 +1,7 @@
 package vocab.model.food.fruits;
 
 import vocab.model.FoodVocab;
-import vocab.model.food.Food;
+import vocab.model.interfaces.Food;
 
 public class Fruits extends FoodVocab implements Food
 {

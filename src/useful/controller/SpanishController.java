@@ -5,12 +5,12 @@ import vocab.view.SpanishFrame;
 import java.util.ArrayList;
 import java.util.List;
 
-import vocab.model.food.*;
 import vocab.model.food.fruits.*;
 import vocab.model.food.bakerygoods.*;
 import vocab.model.food.meats.*;
 import vocab.model.food.seafoods.*;
 import vocab.model.food.vegetables.*;
+import vocab.model.interfaces.*;
 
 public class SpanishController
 {

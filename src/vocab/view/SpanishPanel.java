@@ -45,7 +45,6 @@ public class SpanishPanel extends JPanel
 	private JTextField spanishBox;
 	
 	//Tech Panel
-	//private JTextArea descriptionArea;
 	private JComboBox cateTechDropDown;
 	private JComboBox itemTechDropDown;
 	private JLabel engLT;
@@ -85,6 +84,7 @@ public class SpanishPanel extends JPanel
 		titleForFood = new JLabel("Foods in Spanish");
 		titleForTech = new JLabel("Technical Terms in Spanish");
 		
+		pictureFruitLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")),JLabel.CENTER);
 		//main panel
 		foodBtn = new JButton("Foods");	
 		techBtn = new JButton("Technical Words");
@@ -130,7 +130,6 @@ public class SpanishPanel extends JPanel
 	private void setupLayout()
 	{
 		infoMainMenu.setHorizontalAlignment(SwingConstants.CENTER);
-		pictureFruitLabel = new JLabel(new ImageIcon(getClass().getResource("/vocab/view/images/default.png")),JLabel.CENTER);
 		titleForMenu.setFont(new Font("Comic Sans MS", Font.BOLD, 18));
 		techBtn.setBounds(79, 194, 111, 79);
 		techLayout.putConstraint(SpringLayout.SOUTH, backBtnTech, -10, SpringLayout.SOUTH, techPanel);

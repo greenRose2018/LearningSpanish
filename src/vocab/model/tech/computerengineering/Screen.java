@@ -18,7 +18,7 @@ public class Screen extends ComputerEngineering
 
 	public String spanishWord() {
 		// TODO Auto-generated method stub
-		return "La pantalla";
+		return "El monitor (pantalla)";
 	}
 
 	public String categoryTech() {

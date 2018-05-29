@@ -15,10 +15,10 @@ public class ComputerEngineering extends TechnicalWords implements Technical
 	}
 
 	public ComputerEngineering( String typeOfTech) {
-		super("Computer Engineering", "IngenierÌa Inform·tica", typeOfTech);
+		super("Computer Engineering", "Ingenier√≠a Inform√°tica", typeOfTech);
 	}
 	public ComputerEngineering() {
-		super("Computer Engineering", "IngenierÌa Inform·tica", "Computer Engineering");
+		super("Computer Engineering", "Ingenier√≠a Inform√°tica", "Computer Engineering");
 		// TODO Auto-generated constructor stub
 	}
 
@@ -29,7 +29,7 @@ public class ComputerEngineering extends TechnicalWords implements Technical
 
 	public String spanishWord() {
 		// TODO Auto-generated method stub
-		return "IngenierÌa Inform·tica";
+		return "Ingenier√≠a Inform√°tica";
 	}
 
 	public String categoryTech() {

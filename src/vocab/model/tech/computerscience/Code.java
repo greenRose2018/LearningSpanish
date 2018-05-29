@@ -8,7 +8,7 @@ public class Code extends ComputerScience
 
 	public Code() 
 	{
-		super("Code", "El codigo", "Computer Science");
+		super("Code", "El código", "Computer Science");
 		// TODO Auto-generated constructor stub
 	}
 
@@ -19,7 +19,7 @@ public class Code extends ComputerScience
 
 	public String spanishWord() {
 		// TODO Auto-generated method stub
-		return "El codigo";
+		return "El código";
 	}
 	public String categoryTech() {
 		// TODO Auto-generated method stub

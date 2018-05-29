@@ -18,7 +18,7 @@ public class CPU extends ComputerEngineering
 
 	public String spanishWord() {
 		// TODO Auto-generated method stub
-		return "La CPU (Unidad central de procesamiento)";
+		return "La UPC (Unidad central de procesamiento)";
 	}
 
 	public String categoryTech() {

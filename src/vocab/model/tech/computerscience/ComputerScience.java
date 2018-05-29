@@ -15,12 +15,12 @@ public class ComputerScience extends TechnicalWords implements Technical
 		// TODO Auto-generated constructor stub
 	}
 	public ComputerScience(String typeOfTech) {
-		super("Computer Science", "Ciencias de la Computaci�n", typeOfTech);
+		super("Computer Science", "Ciencias de la Computación", typeOfTech);
 		// TODO Auto-generated constructor stub
 	}
 	
 	public ComputerScience() {
-		super("Computer Science", "Ciencias de la Computaci�n", "Computer Science");
+		super("Computer Science", "Ciencias de la Computación", "Computer Science");
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -31,7 +31,7 @@ public class ComputerScience extends TechnicalWords implements Technical
 
 	public String spanishWord() {
 		// TODO Auto-generated method stub
-		return "Ciencias de la Computaci�n";
+		return "Ciencias de la Computación";
 	}
 
 	public String categoryTech() {

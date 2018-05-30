@@ -288,7 +288,6 @@ public class SpanishPanel extends JPanel
 			}
 		});
 	}
-	//startComplexity
 	private void itemDropDown() 
 	{
 		int selected = categoryDropDown.getSelectedIndex();
@@ -314,7 +313,6 @@ public class SpanishPanel extends JPanel
 			updateFruitInfo(selectedItemIndex);	
 		}
 	}
-	//endComplexity
 	private void itemTechDropDown() 
 	{
 		int selected = cateTechDropDown.getSelectedIndex();
